@@ -1,0 +1,85 @@
+#header {
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    top: 0;
+    width: calc(100% - 40px);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-family: 'PPSupplyMono';
+    z-index: 1000;
+    border-bottom: 0.5px solid #F14620;
+
+}
+
+#header .left {
+    display: flex;
+    align-items: center;
+}
+
+#header .left h1 {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 26px;
+}
+
+#header .left ul {
+    display: flex;
+}
+
+#header .left ul li a {
+    font-weight: 500;
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+}
+
+#header .left ul li a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 20px;
+    position: relative;
+}
+
+#header .left ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.5px;
+    background-color: var(--maincolor);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+#header .left ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+#header .right {
+    padding-right: 20px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.border {
+    width: 15vw;
+    height: 120px;
+    border: 1px solid var(--subcolor);
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    position: fixed;
+    z-index: 29;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+}

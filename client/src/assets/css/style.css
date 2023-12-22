@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* setting */
+@import "./setting/_reset.css";
+@import "./setting/_fonts.css";
+@import "./setting/_var.css";
+@import "./setting/_mixin";
+
+/* section */
+@import "./section/_main.css";
+@import "./section/_about.css";
+@import "./section/_skill.css";
+@import "./section/_project.css";
+@import "./section/_contact.css";
+@import "./section/_intro.css";
+@import "./section/_header.css";

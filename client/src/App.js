@@ -1,24 +1,21 @@
-import React from 'react'
+import React, { useEffect } from "react";
 import { Routes, Route } from 'react-router-dom'
-import Project from './pages/Project'
-import About from './pages/About'
 import Home from './pages/Home'
-import Contact from './pages/Contact'
-import Main from './components/Main'
-import Stacks from './pages/Stacks'
+import Main from './components/Main.jsx'
+import { smooth } from "./utills/smooth.js";
+
 
 const App = () => {
+  useEffect(() => {
+    smooth();
+  });
   return (
     <>
-    <Main>
-      <Routes>
-        <Route path='/contact' element={<Contact />}></Route>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/project' element={<Project />}></Route>
-        <Route path='/stacks' element={<Stacks />}></Route>
-        <Route path='/about' element={<About />}></Route>
-      </Routes>
-  </Main>
+      <Main>
+        <Routes>
+          <Route path='/' element={<Home />}></Route>
+        </Routes>
+      </Main>
     </>
   )
 }

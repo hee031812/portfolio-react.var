@@ -13,7 +13,9 @@ npm install jquery
 npm install axios
 npm install http-proxy-middleware
 npm install @reduxjs/toolkit
-npm install react-redux```
+npm install react-redux
+npm install split-type
+```
 
 server설치 (댓글기능 구현을 위해)
 

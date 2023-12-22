@@ -1,0 +1,40 @@
+:root {
+    --mainfont: "Headlines";
+    --main-nav: "Poppins";
+
+    --maincolor: #FF3B00;
+    --subcolor: #ff3c0062;
+
+    --main-bg-color: #000000;
+    --main-bg-font-color: #f3f0f0;
+    --sub-gg100: #2c2b2b;
+    --sub-gg200: #535151;
+    --sub-gg300: #6e6b6b;
+    --sub-gg400: #999393;
+    --sub-gg500: #bdb6b6;
+
+    --white100: #615f5f;
+    --white200: #858282;
+    --white300: #ddd7d7;
+    --white400: #ece7e7;
+    --white500: #ffffff;
+
+    --black: #000000;
+    --black100: #000000;
+    --black200: #000000;
+    --black300: #000000;
+    --black400: #000000;
+    --black500: #000000;
+
+    font-family: 'Syncopate', 'GmarketSans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    -webkit-text-size-adjust: 100%;
+}

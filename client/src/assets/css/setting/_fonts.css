@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@600;700&family=Syncopate:wght@400;700&display=swap');
+@import url('https://webfontworld.github.io/cafe24/Cafe24Ohsquareair.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Readex+Pro:wght@600;700&display=swap');
+@import url('https://webfontworld.github.io/Cafe24Ohsquareair/Cafe24Ohsquareair.css');
+@import url('https://webfontworld.github.io/vitro/VitroPride.css');
+@import url('https://webfontworld.github.io/elice/EliceDigitalBaeum.css');
+@import url('https://webfontworld.github.io/sebang/SebangGothic.css');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: 'iceJaram-Rg';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/iceJaram-Rg.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    src: url("https://assets.codepen.io/2479807/gilroy-regular.ttf");
+    font-family: "Gilroy";
+}
+
+@font-face {
+    src: url("https://assets.codepen.io/2479807/gilroy-semibold.woff2");
+    font-family: "Gilroy Semi-Bold";
+}
+
+@font-face {
+    font-family: 'PPSupplyMono';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../../font/PPSupplyMono-Regular.woff') format('woff2'),
+        url('../../font/PPSupplyMono-Regular.woff2') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PPSupplyMono';
+    font-weight: 100;
+    font-style: normal;
+    src: url('../../font/PPSupplyMono-Ultralight.woff') format('woff2'),
+        url('../../font/PPSupplyMono-Ultralight.woff2') format('woff');
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'IropkeBatang';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.ttf') format("truetype");
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'HeadingNowTrial';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../../font/HeadingNowTrial-58Heavy.ttf'),
+        url('../../font/PPSupplyMono-Regular.woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Headlines';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../../font/Headlines-Bold.otf')format('truetype'),
+        url('../../font/Headlines-Bold.otf') format('truetype');
+    font-display: swap;
+}
+
+
+
+.syn {
+    font-family: "Syncopate";
+}
+
+.squar {
+    font-family: "Cafe24Ohsquareair";
+}
+
+.Poppins {
+    font-family: "Poppins";
+}
+
+.VitroPride {
+    font-family: "VitroPride";
+}
+
+.elice {
+    font-family: 'EliceDigitalBaeum';
+}
+
+.sebang {
+    font-family: "SebangGothic";
+}
