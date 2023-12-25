@@ -1,3 +1,134 @@
-* {
-    padding: 0;
+#section05 {
+    margin-top: 20vw;
+    width: 100%;
+    height: 250vh;
+}
+
+.container05 .stack {
+    width: 100%;
+    font-size: 10vw;
+    font-family: "Headlines";
+    font-weight: 900;
+    text-transform: uppercase;
+    /* font-weight: 900; */
+    line-height: 1.2;
+    color: #fff;
+    padding-top: 5vw;
+    letter-spacing: -0.2vw;
+
+}
+
+
+.skill__inner {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--mainBg-color);
+}
+
+.skill__title {
+    position: sticky;
+    top: 70px;
+    left: 0;
+    width: 48%;
+    height: 5vw;
+    font-size: 9vw;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--white500);
+    font-family: "Headlines";
+    text-align: center;
+}
+
+/* 
+.skill__title em {
+    font-size: var(--mainNum--font);
+    font-size: 1.25rem;
+    font-weight: 400;
+    display: inline-block;
+    color: var(--white500);
+} */
+
+.skill__desc {
+    margin-top: 5vw;
+    width: 50%;
+}
+
+.skill__desc .num {
+    font-family: 'iceJaram-Rg';
+    font-size: 1vw;
+    line-height: 1;
+    font-weight: 900;
+    color: var(--white500);
+}
+
+.skill__desc h3 {
+    font-size: 3vw;
+    color: var(--white500);
+    font-family: 'iceJaram-Rg';
+    position: relative; 
+    overflow: hidden;
+    text-decoration: none; 
+    text-underline-position: under;
+}
+
+
+
+.skill__desc p {
+    font-size: 0.9vw;
+    color: var(--white500);
+    margin-bottom: 5vh;
+    font-family: 'IropkeBatang';
+    position: relative; 
+    overflow: hidden; 
+display: inline-block;
+}
+
+
+.skill__desc p::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    height: 1px; 
+    background-color: currentColor; 
+    transition: left 0.3s ease, right 0.3s ease; 
+
+}
+
+/* Hover effect */
+.skill__desc p:hover::after {
+    left: 0;
+    right: 0;
+}
+@media(max-width: 800px) {
+    .skill__inner {
+        flex-direction: column;
+    }
+
+    .skill__title {
+        width: 100%;
+        margin-bottom: 10vw;
+        height: auto;
+        background-color: var(--mainBg-color);
+    }
+
+    .skill__desc {
+        width: 100%;
+    }
+
+    .skill__desc h3 {
+        font-size: 18px;
+    }
+
+    .skill__desc p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .skill__desc span {
+        font-size: 20vw;
+    }
 }
