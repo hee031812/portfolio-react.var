@@ -83,3 +83,17 @@
     background-color: transparent;
     backdrop-filter: blur(10px);
 }
+
+.border h2 {
+    padding-top: 8cap;
+    justify-content: center;
+    text-align: center;
+    font-family: 'PPSupplyMono';
+    font-size: 0.9vw;
+}
+.border h3 {
+    text-align: center;
+    padding-top: 2px;
+    font-family: 'VitroPride';
+    font-size: 0.8vw;
+}

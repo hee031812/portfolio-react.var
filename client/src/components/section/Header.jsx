@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 const Header = () => {
     const [currentTime, setCurrentTime] = useState('');
+    const [currentTemp, setCurrentTemp] = useState('');
+    const [lowTemp, setLowTemp] = useState('');
+    const [highTemp, setHighTemp] = useState('');
 
     useEffect(() => {
         const updateHeaderAside = () => {
@@ -13,21 +16,34 @@ const Header = () => {
         const scrollHandler = () => {
             const scrollY = (window.scrollY || window.pageYOffset).toFixed(3);
             const coordinatesElement = document.getElementById("coordinates");
-            coordinatesElement.textContent = "Scroll: " + scrollY;
+            if (coordinatesElement) {
+                coordinatesElement.textContent = "Scroll: " + scrollY;
+            }
         };
 
-        // Set up the scroll event listener
         document.addEventListener("scroll", scrollHandler);
 
-        // Set up the interval for updating the header aside
         const intervalId = setInterval(updateHeaderAside, 1000);
 
-        // Clean up: remove the event listener and clear the interval
+        const fetchWeatherData = async () => {
+            try {
+                const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=652fdcd06848fb153a7c4d83d2500d7e&units=metric');
+                const data = await response.json();
+                setCurrentTemp(data.main.temp);
+                setLowTemp(data.main.temp_min);
+                setHighTemp(data.main.temp_max);
+            } catch (error) {
+                console.error('Error fetching weather data:', error);
+            }
+        };
+
+        fetchWeatherData();
+
         return () => {
             document.removeEventListener("scroll", scrollHandler);
             clearInterval(intervalId);
         };
-    }, []); // Empty dependency array means this effect runs once after the initial render
+    }, []); 
 
     return (
         <>
@@ -43,11 +59,16 @@ const Header = () => {
                 </div>
                 <div className="right">
                     <div className="time">{currentTime}</div>
-                    <div className="contry"></div>
+                    <div className="country"></div>
                     <div id="coordinates"></div>
                 </div>
             </header>
-            <div className="border"></div>
+            <div className="border">
+                <h2>Current Weather</h2>
+                <h3 className="ctemp">현재온도: {currentTemp}</h3>
+                <h3 className="lowtemp">최저온도: {lowTemp}</h3>
+                <h3 className="hightemp">최고온도: {highTemp}</h3>
+            </div>
         </>
     );
 }
