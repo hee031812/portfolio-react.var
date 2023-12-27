@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Header = () => {
     const [currentTime, setCurrentTime] = useState('');
@@ -38,12 +40,24 @@ const Header = () => {
         };
 
         fetchWeatherData();
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".border", {
+            yPercent: 100,
+            ease: "none",
+            scrollTrigger: {
+                trigger: document.body,
+                start: "top top",
+                end: "bottom bottom",
+                scrub: true
+            }
+        });
 
+        // Cleanup function
         return () => {
             document.removeEventListener("scroll", scrollHandler);
             clearInterval(intervalId);
         };
-    }, []); 
+    }, []);
 
     return (
         <>
@@ -51,10 +65,10 @@ const Header = () => {
                 <div className="left">
                     <h1>Developer</h1>
                     <ul>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">project</a></li>
-                        <li><a href="#">skill</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="/Intro#section1">about</a></li>
+                        <li><a href="/Project#section3">project</a></li>
+                        <li><a href="/Skill#section5">skill</a></li>
+                        <li><a href="/Contact#section">contact</a></li>
                     </ul>
                 </div>
                 <div className="right">

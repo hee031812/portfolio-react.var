@@ -19,8 +19,8 @@ const Skill = () => {
                 gsap.to("ul li a", { color: "#fff", duration: 1.4 });
                 gsap.to(".time", { color: "#fff", duration: 1.4 });
                 gsap.to(".country", { color: "#fff", duration: 1.4 }); 
-                gsap.to("#coordinates", { color: "#fff", duration: 1.4 });
-                gsap.to(".header", { color: "#fff", duration: 1.4 }); 
+                gsap.to("#coordinates", { color: "#fff", duration: 1.4 }); 
+                gsap.to(".border", { color: "#fff", duration: 1.4 }); 
             },
             onEnterBack: () => {
                 gsap.to("body", { backgroundColor: "#1A1A1A", duration: 0.8 });
@@ -28,11 +28,12 @@ const Skill = () => {
                 gsap.to("ul li a", { color: "#FF3B00", duration: 1.4 });
                 gsap.to(".time", { color: "#FF3B00", duration: 1.4 });
                 gsap.to(".country", { color: "#FF3B00", duration: 1.4 }); 
-                gsap.to("#coordinates", { color: "#FF3B00", duration: 1.4 });
-                gsap.to(".header", { color: "#FF3B00", duration: 1.4 }); 
+                gsap.to("#coordinates", { color: "#FF3B00", duration: 1.4 }); 
+                gsap.to(".border", { color: "#FF3B00", duration: 1.4 }); 
             },
             onLeave: ({ progress }) => {
                 gsap.to("body", { backgroundColor: "#1A1A1A", duration: 1.4 });
+
             },
             onLeaveBack: ({ progress }) => {
                 if (progress < 0.5) {
@@ -40,7 +41,9 @@ const Skill = () => {
                     gsap.to("h1", { color: "#FF3B00", duration: 1.4 });
                     gsap.to("ul li a", { color: "#FF3B00", duration: 1.4 });
                     gsap.to(".time", { color: "#FF3B00", duration: 1.4 });
-                    gsap.to(".country", { color: "#FF3B00", duration: 1.4 }); // 'contry'를 'country'로 수정
+                    gsap.to(".country", { color: "#FF3B00", duration: 1.4 }); 
+                    gsap.to("#coordinates", { color: "#FF3B00", duration: 1.4 });
+                    gsap.to(".border", { color: "#FF3B00", duration: 1.4 }); 
                 }
             },
         });

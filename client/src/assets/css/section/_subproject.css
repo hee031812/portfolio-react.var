@@ -1,0 +1,72 @@
+
+
+#section4 {
+    padding: 7% 5%;
+}
+
+#section4 .desc {
+    font-size: 3.8vw;
+    line-height: 1.2;
+    font-family: 'PPSupplyMono';
+    font-weight: 100;
+    letter-spacing: -0.2vw;
+}
+
+#section4 .text {
+    margin-top: 10%;
+    font-size: 26vw;
+    line-height: 0.8;
+    font-family: Poppins;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 100px;
+
+}
+
+
+#section4 .list li {
+    border-bottom: 1px solid #F14620;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.hover-image {
+    display: none;
+    position: fixed;
+    pointer-events: none;
+    z-index: 1000;
+    width: 300px;
+    height: auto;
+}
+
+
+#section4 .list li span {
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#section4 .list li em {
+    display: block;
+    font-weight: bold;
+
+}
+
+#section4 .list li strong {
+    font-family: 'IropkeBatang';
+    padding-bottom: 10px;
+    display: block;
+}
+
+#section4 .list li .icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#section4 .list li .icon svg {
+    /* fill: #f14620a9 */
+}

@@ -67,12 +67,11 @@
 #header .right {
     padding-right: 20px;
     text-align: right;
-    font-size: 12px;
+    font-size: 0.7vw;
 }
 
 .border {
-    width: 15vw;
-    height: 120px;
+    width: 12vw;
     border: 1px solid var(--subcolor);
     border-radius: 5px;
     position: absolute;
@@ -82,18 +81,17 @@
     z-index: 29;
     background-color: transparent;
     backdrop-filter: blur(10px);
+    font-size: 0.8vw;
 }
 
 .border h2 {
-    padding-top: 8cap;
-    justify-content: center;
     text-align: center;
     font-family: 'PPSupplyMono';
-    font-size: 0.9vw;
 }
+
 .border h3 {
     text-align: center;
-    padding-top: 2px;
+    padding-top: 5px;
     font-family: 'VitroPride';
-    font-size: 0.8vw;
+    font-size: 0.7vw;
 }
