@@ -1,17 +1,17 @@
 #section1 {
-    padding: 7% 5%;
+    padding: 8% 5%;
 }
 
 #section1 .desc {
     font-size: 3.8vw;
-    line-height: 1.2;
+    line-height: 1.3;
     font-family: 'PPSupplyMono';
     font-weight: 100;
     letter-spacing: -0.2vw;
 }
 
 #section1 .text {
-    margin-top: 10%;
+    margin-top: 13%;
     font-size: 22vw;
     line-height: 0.9;
     font-family: Poppins;
@@ -38,4 +38,19 @@
     height: 120%;
     background-image: url(../../img/사진09.jpg);
     background-size: cover;
+}
+
+.desc {
+    white-space: pre-wrap;
+}
+
+.char {
+    opacity: 0;
+    display: inline-block;
+}
+
+.text>div {
+    opacity: 0;
+    transform: translateY(100px);
+
 }

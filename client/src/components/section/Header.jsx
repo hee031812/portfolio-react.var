@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 const Header = () => {
     const [currentTime, setCurrentTime] = useState('');
     const [currentTemp, setCurrentTemp] = useState('');
-    const [lowTemp, setLowTemp] = useState('');
+    // const [lowTemp, setLowTemp] = useState('');
     const [highTemp, setHighTemp] = useState('');
 
     useEffect(() => {
@@ -32,7 +32,7 @@ const Header = () => {
                 const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=652fdcd06848fb153a7c4d83d2500d7e&units=metric');
                 const data = await response.json();
                 setCurrentTemp(data.main.temp);
-                setLowTemp(data.main.temp_min);
+                // setLowTemp(data.main.temp_min);
                 setHighTemp(data.main.temp_max);
             } catch (error) {
                 console.error('Error fetching weather data:', error);
@@ -77,11 +77,13 @@ const Header = () => {
                     <div id="coordinates"></div>
                 </div>
             </header>
-            <div className="border">
-                <h2>Current Weather</h2>
-                <h3 className="ctemp">현재온도: {currentTemp}</h3>
-                <h3 className="lowtemp">최저온도: {lowTemp}</h3>
-                <h3 className="hightemp">최고온도: {highTemp}</h3>
+            <div class="border">
+
+                <h2>crrent weather</h2>
+                <h3 class="ctemp">⛅ 현재온도:{currentTemp} </h3>
+                {/* <h3 class="lowtemp">최저온도: </h3> */}
+                <h3 class="hightemp">🌡 최고온도: {highTemp} </h3>
+
             </div>
         </>
     );

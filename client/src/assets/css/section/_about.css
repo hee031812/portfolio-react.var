@@ -1,10 +1,10 @@
 /* section02 */
 #section2 {
     padding: 10% 0;
-    height: 100vh;
+    height: 150vh;
     position: relative;
+    margin-bottom: 10vw;
 }
-
 
 .Container {
     position: absolute;
@@ -29,6 +29,9 @@
     user-select: none;
     cursor: pointer;
     z-index: 10;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: transform 0.3s, opacity 0.3s;
 }
 
 .Picture-img {

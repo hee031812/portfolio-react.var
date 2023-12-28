@@ -1,18 +1,16 @@
-
-
 #section4 {
     padding: 7% 5%;
 }
 
 #section4 .desc {
     font-size: 3.8vw;
-    line-height: 1.2;
+    line-height: 1.3;
     font-family: 'PPSupplyMono';
     font-weight: 100;
     letter-spacing: -0.2vw;
 }
 
-#section4 .text {
+#section4 .sec04_text {
     margin-top: 10%;
     font-size: 26vw;
     line-height: 0.8;
@@ -21,9 +19,12 @@
     text-transform: uppercase;
     position: relative;
     margin-bottom: 100px;
-
 }
 
+.sec04_text>div {
+    opacity: 0;
+    transform: translateY(20px);
+}
 
 #section4 .list li {
     border-bottom: 1px solid #F14620;
@@ -39,7 +40,9 @@
     z-index: 1000;
     width: 300px;
     height: auto;
+    background-color: #fff;
 }
+
 
 
 #section4 .list li span {

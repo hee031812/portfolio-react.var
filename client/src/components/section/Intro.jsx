@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import SplitType from 'split-type';
 import Lenis from '@studio-freight/lenis';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Intro = () => {
+    const descRef = useRef(null);
+
     useEffect(() => {
         const lenis = new Lenis({
             duration: 1,
@@ -42,12 +44,41 @@ const Intro = () => {
             });
         });
 
-        // Register ScrollTrigger plugin
         gsap.registerPlugin(ScrollTrigger);
-    }, []);
 
-    useEffect(() => {
-        const img = document.querySelector('.imgWrap .img'); // Define img
+        if (descRef.current) {
+            const wrapCharacters = (element) => {
+                // ...
+            };
+
+            wrapCharacters(descRef.current);
+        }
+
+        gsap.set(".char", { opacity: 0 });
+        gsap.to(".char", {
+            opacity: 1,
+            duration: 0.5,
+            stagger: 0.05,
+            ease: "power2.inOut"
+        });
+
+        // "24turn" 효과
+        gsap.to(".text > div", {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            stagger: 0.3,
+            scrollTrigger: {
+                trigger: ".text",
+                start: "top center",
+                end: "bottom top",
+                toggleActions: "play none none reset"
+            }
+        });
+
+        // 이미지 애니메이션
+        const imgWrap = document.querySelector('.imgWrap');
+        const img = imgWrap.querySelector('.img');
 
         gsap.to(img, {
             scrollTrigger: {
@@ -61,17 +92,16 @@ const Intro = () => {
             ease: "none"
         });
 
-        gsap.to(".imgWrap", {
-            yPercent: -50,
-            ease: "none",
-            duration: 0.5,
+        gsap.to(imgWrap, {
             scrollTrigger: {
                 trigger: "#section1",
                 start: "top bottom",
-                end: "bottom top", // Fix the typo here
+                end: "bottom top",
                 markers: false,
                 scrub: true
-            }
+            },
+            yPercent: -50,
+            ease: "none"
         });
     }, []);
 
