@@ -48,7 +48,7 @@ const Intro = () => {
 
         if (descRef.current) {
             const wrapCharacters = (element) => {
-                // ...
+                
             };
 
             wrapCharacters(descRef.current);
@@ -113,7 +113,7 @@ const Intro = () => {
                     I have a dream of Front and <br />I'm working hard to make it a
                     reality.<br />
                     If you want to see the outcome of the effort,
-                    please scroll down. Hope you have a good time.
+                    please scroll down.Hope you have a good time.
                 </div>
                 <div className="text">
                     <div>24</div>
