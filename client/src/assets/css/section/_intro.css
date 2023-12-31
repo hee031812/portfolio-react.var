@@ -32,11 +32,11 @@
 
 #section1 .text .imgWrap .img {
     position: absolute;
-    left: -10%;
-    top: -10%;
-    width: 120%;
-    height: 120%;
-    background-image: url(../../img/사진09.jpg);
+    /* left: -10%;
+    top: -10%; */
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/김희진2.jpg);
     background-size: cover;
 }
 

@@ -21,7 +21,7 @@ const SubProject = () => {
       stagger: 0.3,
       scrollTrigger: {
         trigger: ".sec04_text",
-        start: "top 70%",
+        start: "top 80%",
         end: "bottom top",
         toggleActions: "play none none reset"
       }
@@ -72,6 +72,7 @@ const SubProject = () => {
               <em>W.standard site</em>
               <strong>리액트를 사용하여 작업한 웹스탠다드 사이트 입니다. 웹 표준에 맞춰 사이트를 제작했습니다.</strong>
  <img
+  alt=''
             ref={hoverImageRef}
             src={hoveredImage}
             style={{
@@ -89,6 +90,7 @@ const SubProject = () => {
               <em>H.Point SITE</em>
               <strong>자바스크립트를 사용하여 제작하였습니다. 현대백화점 포인트 사이트를 클론 코딩한 사이트입니다.</strong>
  <img
+ alt=''
             ref={hoverImageRef}
             src={hoveredImage}
             style={{
@@ -98,6 +100,7 @@ const SubProject = () => {
               height: 'auto',
               transform: 'translate(-50%, -50%)',
               pointerEvents: 'none'
+            
             }}
           />
             </li>
@@ -106,6 +109,7 @@ const SubProject = () => {
               <em>Mouse Effect</em>
               <strong>"Mouse Effect" 웹사이트는 사용자의 마우스 움직임에 반응하여 다양한 시각적 효과를 생성하는 인터랙티브한 사이트입니다.</strong>
  <img
+  alt=''
             ref={hoverImageRef}
             src={hoveredImage}
             style={{
@@ -123,6 +127,7 @@ const SubProject = () => {
               <em>GSAP</em>
               <strong>"GSAP 사이트"는 GreenSock Animation Platform(GSAP)을 기반으로 한 동적이고 상호작용이 풍부한 웹사이트입니다.</strong>
  <img
+  alt=''
             ref={hoverImageRef}
             src={hoveredImage}
             style={{
