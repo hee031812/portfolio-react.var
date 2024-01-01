@@ -54,3 +54,49 @@
     transform: translateY(100px);
 
 }
+@media(max-width:1600px){
+    #section1 .text .imgWrap {
+    width: 37vw;
+    height: 80vh;
+}
+}
+@media(max-width:1400px){
+    #section1 .text .imgWrap {
+    width: 40vw;
+    height: 80vh;
+}
+}
+@media(max-width:1200px){
+    #section1 .text .imgWrap {
+    width: 50vw;
+    height: 80vh;
+}
+}
+@media(max-width:1000px){
+#section1 .text .imgWrap {
+    width: 45vw;
+    height: 60vh;
+
+}
+
+}
+@media(max-width:800px){
+#section1 .text .imgWrap {
+    width: 49vw;
+    height: 53vh;
+}
+
+}
+@media(max-width:600px){
+#section1 .text .imgWrap {
+    width: 54vw;
+    height: 43vh;
+}
+
+}
+@media(max-width:350px){
+#section1 .text .imgWrap {
+    width: 47vw;
+    height: 20vh;
+}
+}

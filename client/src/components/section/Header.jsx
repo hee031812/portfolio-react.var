@@ -65,10 +65,10 @@ const Header = () => {
                 <div className="left">
                     <h1>Developer</h1>
                     <ul>
-                        <li><a href="/Intro#section1">about</a></li>
-                        <li><a href="/Project#section3">project</a></li>
-                        <li><a href="/Skill#section5">skill</a></li>
-                        <li><a href="/Contact#section">contact</a></li>
+                        <li><a href="/#section1">about</a></li>
+                        <li><a href="/#section3">project</a></li>
+                        <li><a href="/#section05">skill</a></li>
+                        <li><a href="/#section07">contact</a></li>
                     </ul>
                 </div>
                 <div className="right">

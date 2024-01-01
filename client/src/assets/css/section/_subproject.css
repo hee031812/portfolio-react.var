@@ -37,6 +37,9 @@
     position: relative;
     cursor: pointer;
 }
+#section4 .list li:hover {
+   background-color: #f1462013;
+}
 
 
 .hover-image {
@@ -52,7 +55,7 @@
 
 
 #section4 .list li span {
-    margin-top: 20px;
+    padding-top: 20px;
     display: block;
     margin-bottom: 10px;
 }

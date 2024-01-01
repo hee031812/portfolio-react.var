@@ -119,7 +119,7 @@ input::placeholder {
   margin: 5px;
 }
 
-.time {
+.chatBox .time {
   font-size: 12px;
   color: #ff3b00;
   position: absolute;
@@ -334,4 +334,61 @@ input::placeholder {
     80% {
         top: -200px;
     }
+}
+@media(max-width:1100px){
+.Iam p {
+    font-size: 9rem;
+}
+.Iam .innerIam {
+    font-size: 2rem;
+}
+}
+@media(max-width:900px){
+.Iam p {
+    font-size: 7rem;
+}
+.Iam .innerIam {
+    font-size: 1.2rem;
+}
+}
+@media(max-width:650px){
+.container06 {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.Iam {
+    width: 100%;
+
+    display: flex;
+    font: normal 60px/50px Headlines;
+    color: #F4F0E6;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container06 .sec06_right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5vw;
+}
+}
+@media(max-width:400px){
+.Iam p {
+    font-size:4rem;
+}
+.Iam .innerIam {
+display: none;
+}
+.commentWrap h5 {
+    font-size: 5.5vw;
+}
+.commentWrap p {
+    font-size: 3.9vw;
+}
+.commentWrap button {
+    font-size: 5vw;
+}
+
 }

@@ -1,0 +1,91 @@
+#section07 {
+    width: 100%;
+    height: 100vh;
+    padding: 5vw;
+}
+
+.topWrap {
+    justify-content: center;
+    align-items: center;
+    padding-top: 7vw;
+    display: flex;
+    flex-direction: column;
+    color: #F4F0E6;
+    font-size: 0.9vw;
+    font-family: 'PPSupplyMono';
+}
+
+.topWrap h6 {
+    font-size: 2vw;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    /* background-color: #5a5a5a5d; */
+    text-align: center;
+    display: flex;
+    padding: 1px;
+    padding-top: 5px;
+    /* justify-content: center; */
+}
+
+.topWrap p {
+    padding-top: 1cqi;
+    font-size: 1vw;
+    padding-bottom: 10px;
+    font-weight: 100;
+    padding-bottom: 1vw;
+    text-align: center;
+}
+.contactWrap {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5vw;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    font-family: 'PPSupplyMono';
+    color: #fff;
+}
+
+.icon1 {
+    padding: 20px;
+    display: flex;
+}
+
+.iconbox {
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #fff;
+    position: relative;
+    margin-right: 20px;
+}
+
+.iconbox img {
+    position: absolute;
+    top: 18%;
+    left: 19%;
+    width: 18px;
+    height: 18px;
+}
+
+.icon1 , .icon2 {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+.icon1:hover , 
+.icon2:hover {
+    background-color: #ffffff1e;
+}
+
+.iconText {
+    display: inline-block;
+}
+.move {
+    padding: 0 50px;
+    font-weight: 100;
+    font-family: 'Poppins';
+    cursor: pointer;
+}

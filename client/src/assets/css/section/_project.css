@@ -101,3 +101,79 @@
     transform: scale(1.1);
     background-color: rgba(255, 255, 255, 0.301);
 }
+
+@media (max-width:1600px) {
+    .port-wrap .port {
+        height: 740px;
+    }
+
+    #section1 .text .imgWrap {
+        width: 38vw;
+    }
+}
+
+@media (max-width:1500px) {
+    .port-wrap .port {
+        height: 700px;
+    }
+
+    #section1 .text .imgWrap {
+        width: 38vw;
+    }
+}
+
+@media (max-width:1400px) {
+    .port-wrap .port {
+        height: 650px;
+    }
+
+    #section1 .text .imgWrap {
+        width: 38vw;
+    }
+
+    .port-wrap .port .skill span {
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        line-height: 80px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width:1300px) {
+    .port-wrap .port {
+        height: 600px;
+         cursor: pointer;
+    }
+
+    .port-wrap .port .skill span {
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    #section1 .text .imgWrap {
+        width: 38vw;
+    }
+    .port-wrap .port .skill {
+    display: none;
+
+}
+.port-wrap .port::after {
+    height: 50%;
+}
+}
+
+@media (max-width: 1000px) {
+    .port-wrap .port {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 900px) {
+
+}

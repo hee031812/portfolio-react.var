@@ -113,7 +113,7 @@ const Intro = () => {
                     I have a dream of Front and <br />I'm working hard to make it a
                     reality.<br />
                     If you want to see the outcome of the effort,
-                    please scroll down. Hope you have a good time.<br />
+                    please scroll down. Hope you have a good time.·͜·<br />
                 </div>
                 <div className="text">
                     <div>24</div>

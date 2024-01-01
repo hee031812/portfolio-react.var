@@ -131,4 +131,13 @@ display: inline-block;
     .skill__desc span {
         font-size: 20vw;
     }
+    .skill__title {
+    display: none;
+}
+}
+
+@media(max-width: 800px) {
+.skill__desc .num {
+    font-size: 10vw;
+}
 }
