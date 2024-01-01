@@ -98,7 +98,7 @@ const Intro = () => {
                 start: "top bottom",
                 end: "bottom top",
                 markers: false,
-                scrub: true,
+                scrub: true
             },
             yPercent: -50,
             ease: "none"
@@ -113,7 +113,7 @@ const Intro = () => {
                     I have a dream of Front and <br />I'm working hard to make it a
                     reality.<br />
                     If you want to see the outcome of the effort,
-                    pleasescrolldown.Hope you have a good time.
+                    please scroll down. Hope you have a good time.<br />
                 </div>
                 <div className="text">
                     <div>24</div>

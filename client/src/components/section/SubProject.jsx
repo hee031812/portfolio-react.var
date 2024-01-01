@@ -9,6 +9,7 @@ import sub4 from '../../assets/img/gsap.png';
 const SubProject = () => {
   const listRef = useRef(null);
   const hoverImageRef = useRef(null);
+  const descRef = useRef(null);
   const [hoveredImage, setHoveredImage] = useState('');
 
   useEffect(() => {
@@ -22,6 +23,19 @@ const SubProject = () => {
       scrollTrigger: {
         trigger: ".sec04_text",
         start: "top 80%",
+        end: "bottom top",
+        toggleActions: "play none none reset"
+      }
+    });
+
+      gsap.to(descRef.current.children, {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      stagger: 0.3,
+      scrollTrigger: {
+        trigger: descRef.current,
+        start: "top 90%",
         end: "bottom top",
         toggleActions: "play none none reset"
       }
@@ -56,10 +70,10 @@ const SubProject = () => {
 
  <>
       <div id="section4">
-        <div className="desc split">
-          "I've worked hard for the past six months. <br />
-          If you want to see more of the results,<br />
-          please scroll down."
+        <div className="sec04_desc" ref={descRef}>
+          <span>"I've worked hard for the past six months.</span>
+          <span>If you want to see more of the results,</span>
+          <span>please scroll down."</span>
         </div>
         <div className="sec04_text">
           <div>LIST</div>
@@ -72,7 +86,7 @@ const SubProject = () => {
               <em>W.standard site</em>
               <strong>리액트를 사용하여 작업한 웹스탠다드 사이트 입니다. 웹 표준에 맞춰 사이트를 제작했습니다.</strong>
  <img
-  alt=''
+ alt=''
             ref={hoverImageRef}
             src={hoveredImage}
             style={{

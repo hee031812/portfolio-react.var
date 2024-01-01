@@ -2,12 +2,18 @@
     padding: 7% 5%;
 }
 
-#section4 .desc {
+#section4 .sec04_desc {
     font-size: 3.8vw;
     line-height: 1.5;
     font-family: 'PPSupplyMono';
     font-weight: 100;
     letter-spacing: -0.2vw;
+
+}
+.sec04_desc span {
+  display: block;
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 #section4 .sec04_text {

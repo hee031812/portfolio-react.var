@@ -72,8 +72,8 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="right">
-                    <div className="time">{currentTime}</div>
-                    <div className="country"></div>
+                <div className="time">{currentTime}</div>
+                <div className="country"></div>
                     <div id="coordinates"></div>
                 </div>
             </header>
