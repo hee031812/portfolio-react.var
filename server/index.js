@@ -1,43 +1,78 @@
 const express = require("express");
-const mongoose = require('mongoose');
-const cors = require('cors');
+const path = require("path");
+const mongoose = require("mongoose");
+
 const app = express();
-const port = 5050;
+const port = process.env.PORT || 5050;
+const config = require("./config/key.js");
 
-// MongoDB 연결
-mongoose.connect('mongodb+srv://hee031812:hee0318121@cluster0.xcpvxup.mongodb.net/?retryWrites=true&w=majority')
-    .then(() => console.log("Connected to MongoDB"))
-    .catch(err => console.log(err));
+app.use(express.static(path.join(__dirname, "./client/build")));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// 스키마 및 모델 정의
-const commentSchema = new mongoose.Schema({
-    name: { type: String, required: true },
-    content: { type: String, required: true },
-    createdAt: { type: Date, default: Date.now }
-});
-const Comment = mongoose.model('Comment', commentSchema);
+const { Comment } = require("./model/Comment.js");
+const { Counter } = require("./model/Counter.js");
 
-// 미들웨어
-app.use(cors());
-app.use(express.json()); // JSON 요청 본문 처리
-
-// 댓글 목록 가져오기
-app.get('/api/reple/list', (req, res) => {
-    Comment.find().sort({ createdAt: -1 })
-        .then(comments => res.json({ success: true, reples: comments }))
-        .catch(err => res.status(400).json({ success: false, error: err }));
-});
-
-// 댓글 추가
-app.post('/api/reple/submit', (req, res) => {
-    const newComment = new Comment(req.body);
-    newComment.save()
-        .then(comment => res.json({ success: true, comment }))
-        .catch(err => res.status(400).json({ success: false, error: err }));
-});
-
-// 서버 시작
 app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+  mongoose
+    .connect(config.mongoURI)
+    .then(() => {
+      console.log("listening --> " + port);
+      console.log("mongoose --> connecting");
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 });
 
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
+
+// 글쓰기
+app.post("/api/comment", (req, res) => {
+  let temp = req.body;
+
+  Counter.findOne({ name: "counter" })
+    .exec()
+    .then((counter) => {
+      temp.commentNum = counter.commentNum;
+
+      const CommentWrite = new Comment(temp);
+
+      CommentWrite.save().then(() => {
+        Counter.updateOne(
+          { name: "counter" },
+          { $inc: { commentNum: 1 } }
+        ).then(() => {
+          res.status(200).json({ success: true });
+        });
+      });
+    })
+    .catch((err) => {
+      console.error("Error in /api/comment: ", err);
+      res.status(500).json({ success: false, message: "Internal Server Error" });
+    });
+});
+
+// 댓글 목록
+app.get("/api/comments", (req, res) => {
+  Comment.find()
+    .exec()
+    .then((result) => {
+      res.status(200).json({ success: true, comments: result });
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(400).json({ success: false });
+    });
+});
+
+
+// 이제 댓글 삭제 기능은 제거되었습니다.
+
+module.exports = app;
