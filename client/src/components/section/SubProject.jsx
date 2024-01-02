@@ -85,7 +85,7 @@ const SubProject = () => {
               <span>coding</span>
               <em>W.standard site</em>
               <strong>리액트를 사용하여 작업한 웹스탠다드 사이트 입니다. 웹 표준에 맞춰 사이트를 제작했습니다.</strong>
-              <i class="icon">
+              <i className="icon">
                 <svg width="33" height="33" viewBox="0 0 16 16" fill="#f14620a9" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M5.869 11.219C7.09935 12.26 8.90165 12.26 10.132 11.219C10.5191 10.892 10.8176 10.4727 11 10C10.007 10.1555 9.00482 10.245 8 10.268C6.99518 10.245 5.99299 10.1555 5 10C5.18273 10.4728 5.48158 10.8921 5.869 11.219Z"
@@ -113,7 +113,7 @@ const SubProject = () => {
               <span>coding</span>
               <em>H.Point SITE</em>
               <strong>자바스크립트를 사용하여 제작하였습니다. 현대백화점 포인트 사이트를 클론 코딩한 사이트입니다.</strong>
-              <i class="icon">
+              <i className="icon">
                 <svg width="33" height="33" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M8 15C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z"
@@ -147,7 +147,7 @@ const SubProject = () => {
               <span>coding</span>
               <em>Mouse Effect</em>
               <strong>"Mouse Effect" 웹사이트는 사용자의 마우스 움직임에 반응하여 다양한 시각적 효과를 생성하는 인터랙티브한 사이트입니다.</strong>
-              <i class="icon">
+              <i className="icon">
                 <svg width="33" height="33" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M5 10.0002C5.18131 10.4725 5.47841 10.8917 5.864 11.2192C7.09027 12.2485 8.87485 12.2615 10.116 11.2502C10.5069 10.9285 10.8109 10.5138 11 10.0442"
@@ -180,7 +180,7 @@ const SubProject = () => {
               <span>coding</span>
               <em>GSAP</em>
               <strong>"GSAP 사이트"는 GreenSock Animation Platform(GSAP)을 기반으로 한 동적이고 상호작용이 풍부한 웹사이트입니다.</strong>
-              <i class="icon">
+              <i className="icon">
                 <svg width="33" height="33" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M5 10.0002C5.18131 10.4725 5.47841 10.8917 5.864 11.2192C7.09027 12.2485 8.87485 12.2615 10.116 11.2502C10.5069 10.9285 10.8109 10.5138 11 10.0442"

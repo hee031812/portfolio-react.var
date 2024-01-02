@@ -1,19 +1,48 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const Section06 = () => {
-  const [comments, setComments] = useState([
-    { text: "안녕하세요!", time: "오후 3:45", type: "sent" },
-    { text: "안녕하세요, 만나서 반가워요!", time: "오후 3:46", type: "received" }
-    // 기존 댓글들
-  ]);
+  const [comments, setComments] = useState([]);
   const [name, setName] = useState('');
   const [newComment, setNewComment] = useState('');
 
+  // 페이지 로드 시 댓글 불러오기
+  useEffect(() => {
+    axios.get('/api/reple/list')
+      .then(response => {
+        if (response.data.success) {
+          setComments(response.data.reples);
+        } else {
+          alert('댓글을 불러오는 데 실패했습니다.');
+        }
+      })
+      .catch(error => {
+        console.error("Error: ", error);
+      });
+  }, []);
+
+  // 댓글 추가 처리
   const handleSendClick = () => {
-    // 댓글 추가하는 로직 예정
-    const newEntry = { text: newComment, time: new Date().toLocaleTimeString(), type: "sent" };
-    setComments([...comments, newEntry]);
-    setNewComment(''); // 댓글 입력 필드 초기화
+    if (!name || !newComment) {
+      alert('이름과 댓글을 모두 입력해주세요.');
+      return;
+    }
+
+    const newEntry = { name, content: newComment };
+
+    axios.post('/api/reple/submit', newEntry)
+      .then(response => {
+        if (response.data.success) {
+          setComments([...comments, response.data.comment]);
+          setNewComment('');
+          setName('');
+        } else {
+          alert('댓글을 추가하지 못했습니다.');
+        }
+      })
+      .catch(error => {
+        console.error("Error: ", error);
+      });
   };
 
   return (
@@ -36,8 +65,8 @@ const Section06 = () => {
             <div className="chatBox">
               {comments.map((comment, index) => (
                 <div key={index} className={`message ${comment.type}`}>
-                  <span className="text">{comment.text}</span>
-                  <span className="time">{comment.time}</span>
+                  <span className="text">{comment.content}</span>
+                  <span className="name">{comment.name}</span>
                 </div>
               ))}
             </div>
@@ -46,17 +75,17 @@ const Section06 = () => {
                 <h5>Comment</h5>
                 <p>Please write down what you want to say.</p>
                 <fieldset>
-                  <div className="name"> 
-                    <input 
-                      type="text" 
+                  <div className="name">
+                    <input
+                      type="text"
                       placeholder="이름을 입력해주세요."
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                     />
                   </div>
-                  <div className="write"> 
-                    <input 
-                      type="text" 
+                  <div className="write">
+                    <input
+                      type="text"
                       placeholder="댓글을 입력해주세요."
                       value={newComment}
                       onChange={(e) => setNewComment(e.target.value)}
