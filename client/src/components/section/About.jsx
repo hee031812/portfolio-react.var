@@ -23,7 +23,7 @@ import dot from '../../assets/img/@.png'
 
 const About = () => (
     <div id="section2">
-        <h5>{"{ 어바웃미 }"}</h5>
+        <h5>{"{ about me }"}</h5>
         <div className="Container">
             <Picture src={piture15} alt="" note={<span>@Heejin's -
                 <a className="git" href="https://github.com/hee031812/hee031812.git" target="_top">

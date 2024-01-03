@@ -46,13 +46,16 @@ const Modal = ({ modal }) => {
         let moveTextY = gsap.quickTo(cursorText.current, "top", { duration: 0.8, ease: "power3" });
 
         const moveMouse = (e) => {
-            const { clientX, clientY } = e;
-            moveContainerX(clientX);
-            moveContainerY(clientY);
-            moveCursorX(clientX);
-            moveCursorY(clientY);
-            moveTextX(clientX);
-            moveTextY(clientY);
+   const { clientX, clientY } = e;
+        const xOffset = -10; 
+        const yOffset = 1200; 
+
+        moveContainerX(clientX + xOffset);
+        moveContainerY(clientY + yOffset);
+        moveCursorX(clientX);
+        moveCursorY(clientY);
+        moveTextX(clientX);
+        moveTextY(clientY);
         };
 
         window.addEventListener("mousemove", moveMouse);

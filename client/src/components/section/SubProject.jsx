@@ -1,12 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect,useRef  } from 'react';
 import Modal from '../modal/Modal.jsx';
 import Project from '../project/project.jsx';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import image1 from '../../../src/assets/img/standard.png';
 import image2 from '../../../src/assets/img/hpoint.png';
 import image3 from '../../../src/assets/img/mouse.png';
 import image4 from '../../../src/assets/img/gsap.png';
-
+gsap.registerPlugin(ScrollTrigger); 
 
 const SubProject = () => {
 
@@ -81,13 +83,49 @@ const SubProject = () => {
       </svg>,
 
     }
-  ]
+  ];
 
   const [modal, setModal] = useState({ active: false, index: 0 })
+  const descRef = useRef(null);
+  
+useEffect(() => {
+    // 섹션 내의 텍스트 요소에 대한 애니메이션 효과
+    gsap.to(".sec04_text > div", {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      stagger: 0.3,
+      scrollTrigger: {
+        trigger: ".sec04_text",
+        start: "top 80%",
+        end: "bottom top",
+        toggleActions: "play none none reset"
+      }
+    });
 
+     gsap.to(descRef.current.children, {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      stagger: 0.3,
+      scrollTrigger: {
+        trigger: descRef.current,
+        start: "top 90%",
+        end: "bottom top",
+        toggleActions: "play none none reset"
+      }
+    });
+  }, []);
   return (
     <section id='section4' className='contents'>
-
+      <div className='sec04_desc' ref={descRef}>
+       We are a design agency based in Copenhagen. With a strong belief in strategically founded and highly crafted
+      digital experiences
+      </div>
+      <div className="sec04_text">
+          <div>LIST</div>
+          <div>MORE</div>
+        </div>
       <div className='project__wrap'>
         {texts.map((text, index) => {
           return <Project key={index} index={index} text={text} setModal={setModal} />
