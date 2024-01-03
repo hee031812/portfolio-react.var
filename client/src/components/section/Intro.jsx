@@ -4,6 +4,8 @@ import SplitType from 'split-type';
 import Lenis from '@studio-freight/lenis';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+import myimg from '../../assets/img/김희진2.jpg'
+
 const Intro = () => {
     const descRef = useRef(null);
 
@@ -77,7 +79,7 @@ const Intro = () => {
         });
 
         // 이미지 애니메이션
-        const imgWrap = document.querySelector('.imgWrap');
+        const imgWrap = document.querySelector('.img');
         const img = imgWrap.querySelector('.img');
 
         gsap.to(img, {
@@ -108,20 +110,21 @@ const Intro = () => {
     return (
         <>
             <div id="section1">
+
                 <div className="desc split">
                     Hello, I'm Kim Heejin.<br />
                     I have a dream of Front and <br />I'm working hard to make it a
                     reality.<br />
                     If you want to see the outcome of the effort,
-                    please scroll down. Hope you have a good time.·͜·<br />
+                    please scroll down.Hope you have a good time.·͜·<br />
                 </div>
                 <div className="text">
                     <div>24</div>
                     <div>turn</div>
                     <div>my life</div>
-                    <div className="imgWrap">
-                        <div className="img"></div>
-                    </div>
+             <div class="img">
+                <img src={myimg} alt="dd" />
+            </div>
                 </div>
             </div>
         </>

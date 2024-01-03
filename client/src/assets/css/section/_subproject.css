@@ -55,32 +55,31 @@
     justify-content: space-between;
 }
 
-h2 {
+.project .left {
     display: flex;
     flex-direction: column;
     font-weight: 300;
-    font-size: 4vw;
-    line-height: 2.3;
     transition: all 0.3s;
     font-family: 'IropkeBatang';
-
-
 }
 
-h2>span {
+.project .left span {
+    font-size: 0.8vw;
+    font-family: 'Poppins';
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.project .left i {
     font-size: 1vw;
-    font-family: 'PPSupplyMono';
+    font-weight: 500;
+    font-family: 'Poppins';
 }
 
-h2>i {
-    font-size: 3.5vw;
-    font-weight: 100;
-    font-family: 'Headlines';
-}
-
-h2>p {
-    font-size: 1.2vw;
+.project .left p {
+    font-size: 1vw;
     font-family: 'IropkeBatang';
+    margin-bottom: 10px;
 }
 
 

@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Frame00 from '../../assets/img/Frame00.png';
-import Frame02 from '../../assets/img/Frame02.png';
-import Frame04 from '../../assets/img/Frame04.png';
+// import Frame00 from '../../assets/img/Frame00.png';
+// import Frame02 from '../../assets/img/Frame02.png';
+// import Frame04 from '../../assets/img/Frame04.png';
 import Frame05 from '../../assets/img/Frame05.png';
 import Frame06 from '../../assets/img/Frame06.png';
-import Frame07 from '../../assets/img/Frame07.png';
+// import Frame07 from '../../assets/img/Frame07.png';
 import Frame08 from '../../assets/img/Frame08.png';
 import recycle from '../../assets/img/분리의신.png';
 import petpar from '../../assets/img/PETPAR.png';
@@ -30,7 +30,7 @@ const Project = () => {
             scrollTrigger: {
                 trigger: "#section3",
                 start: "top 20px",
-                end: "+=2000",
+                end: "+=4000",
                 pin: true,
                 scrub: 1,
                 markers: false,
@@ -42,16 +42,16 @@ const Project = () => {
 
     return (
         <>
-            <div id="section3">
-                <h4>포트폴리오</h4>
+              <div id="section3">
+                <h4>{"{ 포트폴리오 }"}</h4>
                 <div className="port-wrap">
                     <div className="port p1">
-                        <img src={Frame00} alt="" />
+                        <img src={Frame05} alt="" />
                         <div className="mp3">
                             <img src={recycle} alt="" />
                         </div>
                         <div className="info">
-                            <h5>Recycle</h5>
+                            <h5>{"{ Recycle }"}</h5>
                             <p>
                                 분리배출 정보에 관한 사이트입니다.<br />
                                 PHP를 사용하여 만들었습니다.
@@ -66,12 +66,12 @@ const Project = () => {
                     </div>
 
                     <div className="port p2">
-                        <img src={Frame02} alt="" />
+                        <img src={Frame05} alt="" />
                         <div className="mp3">
                             <img src={petpar} alt="" />
                         </div>
                         <div className="info">
-                            <h5>Petpar</h5>
+                            <h5>{"{ Petpar }"}</h5>
                             <p>
                                 PETPAR는 유기동물 플랫폼 웹사이트입니다.<br />
                                 유기동물들을 입양하고 정보를 공유하는
@@ -85,12 +85,12 @@ const Project = () => {
                         </div>
                     </div>
                     <div className="port p3">
-                        <img src={Frame04} alt="" />
+                        <img src={Frame05} alt="" />
                         <div className="mp3">
                             <img src={movie} alt="" />
                         </div>
                         <div className="info">
-                            <h5>Movie Project </h5>
+                            <h5>{"{ Movie Project }"} </h5>
                             <p>
                                 VUE.JS 를 이용하여 제작하였습니다.<br />
                                 최신영화, 인기영화를 한눈에 볼수 있게<br />
@@ -109,7 +109,7 @@ const Project = () => {
                             <img src={youtube} alt="" />
                         </div>
                         <div className="info">
-                            <h5>youtube api </h5>
+                            <h5>{"{ Youtube API }"}</h5>
                             <p>
                                 REACT 를 이용하여 제작하였습니다.<br />
                                 여행유튜브의 영상들을 한번에 보기 쉽게 <br />
@@ -128,7 +128,7 @@ const Project = () => {
                             <img src={trip} alt="" />
                         </div>
                         <div className="info">
-                            <h5>PHP Blog </h5>
+                            <h5>{"{ PHP Blog }"}</h5>
                             <p>
                                 PHP를 이용하여 제작하였습니다. <br />
                                 여행에 관련된 정보를 보고
@@ -148,7 +148,7 @@ const Project = () => {
                             <img src={quiz1} alt="" />
                         </div>
                         <div className="info">
-                            <h5>QUIZ Project </h5>
+                            <h5>{"{ Quiz Project }"}</h5>
                             <p>
                                 JAVASCRIPT를 이용하여 제작하였습니다.<br />
                                 자격증 공부를 보다 손쉽게 할수있는<br />
@@ -162,12 +162,12 @@ const Project = () => {
                         </div>
                     </div>
                     <div className="port p7">
-                        <img src={Frame07} alt="" />
+                        <img src={Frame08} alt="" />
                         <div className="mp3">
                             <img src={quiz2} alt="" />
                         </div>
                         <div className="info">
-                            <h5>U.QUIZ PROJECT </h5>
+                            <h5>{"{ U.Quiz Project }"}</h5>
                             <p>
                                 JAVASCRIPT를 이용하여 제작하였습니다.<br />
                                 QUIZ 게임에서 조금 더 업그레이드하여<br />

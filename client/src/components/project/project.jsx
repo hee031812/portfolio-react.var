@@ -7,11 +7,13 @@ const project = ({ text, index, setModal }) => {
             onMouseEnter={() => { setModal({ active: true, index: index }) }}
             onMouseLeave={() => { setModal({ active: false, index: index }) }}
         >
-            <h2>
-                <span>{text.subTitle}</span>
+        <div className='left'>
+         <span>{text.subTitle}</span>
                 <i>{text.title}</i>
                 <p>{text.desc}</p>
-            </h2>
+        </div>
+               
+
             <div className='date'>{text.icon}</div>
         </div>
     )

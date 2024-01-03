@@ -4,7 +4,7 @@
 
 #section3 h4 {
     padding: 16px 23px 0;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     font-family: 'iceJaram-Rg';
 }
@@ -24,7 +24,7 @@
     border-radius: 5px;
     overflow: hidden;
     position: relative;
-    height: 860px;
+    height: 950px;
 }
 
 .port-wrap .port::after {
@@ -68,9 +68,6 @@
     width: 70%;
     filter: sepia(10%);
 }
-
-
-
 
 .port-wrap .port img {
     filter: sepia(20%);

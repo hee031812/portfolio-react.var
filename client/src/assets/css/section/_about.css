@@ -5,6 +5,15 @@
     position: relative;
     margin-bottom: 10vw;
 }
+   #section2 h5 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 2%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'iceJaram-Rg';
+    }
 
 .Container {
     position: absolute;
