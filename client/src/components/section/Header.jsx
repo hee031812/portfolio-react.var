@@ -72,17 +72,15 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="right">
-                <div className="time">{currentTime}</div>
-                <div className="country"></div>
+                    <div className="time">{currentTime}</div>
+                    <div className="country"></div>
                     <div id="coordinates"></div>
                 </div>
             </header>
             <div class="border">
-
-                <h2>crrent weather</h2>
-                <h3 class="ctemp">⛅ 현재온도:{currentTemp} </h3>
-                {/* <h3 class="lowtemp">최저온도: </h3> */}
-                <h3 class="hightemp">🌡 최고온도: {highTemp} </h3>
+                <h3 className="ctemp">⛅ 현재온도:{currentTemp} </h3>
+                {/* <h3 className="lowtemp">최저온도: </h3> */}
+                <h3 className="hightemp">🌡 최고온도: {highTemp} </h3>
 
             </div>
         </>

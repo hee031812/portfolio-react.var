@@ -83,12 +83,6 @@
     backdrop-filter: blur(10px);
 }
 
-.border h2 {
-    text-align: center;
-    font-family: 'PPSupplyMono';
-    font-size: 0.9vw;
-}
-
 .border h3 {
     text-align: center;
     padding-top: 5px;

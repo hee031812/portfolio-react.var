@@ -42,26 +42,26 @@ const Contact = () => {
   }, []);
   return (
     <div id="section07">
-      <div class="topWrap">
+      <div className="topWrap">
         <h6>Contact me</h6>
         <p>Tell us about your project.<br />
           Let’s collaborate and make great stuff.
         </p>
       </div>
-      <div class="contactWrap">
-        <div class="icon1">
-          <div class="iconbox"><img src={icon1} alt="" /></div>
-          <div class="iconText">GMAIL</div>
+      <div className="contactWrap">
+        <div className="icon1">
+          <div className="iconbox"><img src={icon1} alt="" /></div>
+          <div className="iconText">GMAIL</div>
+          <div classNameName='move'></div>
+        </div>
+        <div className="icon2">
+          <div className="iconbox"><img src={icon2} alt="" /></div>
+          <div className="iconText">GIT</div>
           <div className='move'></div>
         </div>
-        <div class="icon2">
-          <div class="iconbox"><img src={icon2} alt="" /></div>
-          <div class="iconText">GIT</div>
-          <div className='move'></div>
-        </div>
-        <div class="icon2">
-          <div class="iconbox"><img src={icon2} alt="" /></div>
-          <div class="iconText">kakao</div>
+        <div className="icon2">
+          <div className="iconbox"><img src={icon2} alt="" /></div>
+          <div className="iconText">kakao</div>
           <div className='move'></div>
         </div>
       </div>
