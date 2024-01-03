@@ -87,9 +87,9 @@ const SubProject = () => {
 
   const [modal, setModal] = useState({ active: false, index: 0 })
   const descRef = useRef(null);
-  
+
 useEffect(() => {
-    // 섹션 내의 텍스트 요소에 대한 애니메이션 효과
+    
     gsap.to(".sec04_text > div", {
       opacity: 1,
       y: 0,

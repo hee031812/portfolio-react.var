@@ -14,7 +14,7 @@ const project = ({ text, index, setModal }) => {
         </div>
                
 
-            <div className='date'>{text.icon}</div>
+            <div className='icon'>{text.icon}</div>
         </div>
     )
 }

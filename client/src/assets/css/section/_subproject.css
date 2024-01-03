@@ -49,6 +49,10 @@
     align-items: center;
     justify-content: space-between;
 }
+.project:hover {
+   background-color: #f146200f;
+   transition: all 0.5s;
+}
 
 .project .left {
     display: flex;
@@ -75,6 +79,13 @@
     font-size: 1vw;
     font-family: 'IropkeBatang';
     margin-bottom: 10px;
+}
+.icon {
+    margin-right: 10px;
+}
+.project .left:hover + .icon {
+    transform: scale(1.5);
+    transition: all 0.5s;
 }
 
 
