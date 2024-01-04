@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Frame00 from '../../assets/img/Frame00.png';
+import Frame00 from '../../assets/img/Frame01.png';
 import Frame02 from '../../assets/img/Frame02.png';
 import Frame04 from '../../assets/img/Frame04.png';
 import Frame05 from '../../assets/img/Frame05.png';
