@@ -1,4 +1,4 @@
-import React, { useState, useEffect,useRef  } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Modal from '../modal/Modal.jsx';
 import Project from '../project/project.jsx';
 import gsap from 'gsap';
@@ -8,7 +8,7 @@ import image1 from '../../../src/assets/img/standard.png';
 import image2 from '../../../src/assets/img/hpoint.png';
 import image3 from '../../../src/assets/img/mouse.png';
 import image4 from '../../../src/assets/img/gsap.png';
-gsap.registerPlugin(ScrollTrigger); 
+gsap.registerPlugin(ScrollTrigger);
 
 const SubProject = () => {
 
@@ -88,11 +88,11 @@ const SubProject = () => {
   const [modal, setModal] = useState({ active: false, index: 0 })
   const descRef = useRef(null);
 
-useEffect(() => {
-    
+  useEffect(() => {
+
     gsap.to(".sec04_text > div", {
       opacity: 1,
-      y: 0,
+      y: -5,
       duration: 1,
       stagger: 0.3,
       scrollTrigger: {
@@ -103,8 +103,8 @@ useEffect(() => {
       }
     });
 
-     gsap.to(descRef.current.children, {
-      y: 0,
+    gsap.to(descRef.current.children, {
+      y: -5,
       opacity: 1,
       duration: 1,
       stagger: 0.3,
@@ -116,16 +116,20 @@ useEffect(() => {
       }
     });
   }, []);
+
+
+
   return (
     <section id='section4' className='contents'>
-      <div className='sec04_desc' ref={descRef}>
-       We are a design agency based in Copenhagen. With a strong belief in strategically founded and highly crafted
-      digital experiences
+      <div className='sec04_desc split' ref={descRef}>
+        <div>We are a design agency based in Copenhagen.
+          With a strong belief in strategically founded and highly crafted digital experiences.
+        </div>
       </div>
       <div className="sec04_text">
-          <div>LIST</div>
-          <div>MORE</div>
-        </div>
+        <div>LIST</div>
+        <div>MORE</div>
+      </div>
       <div className='project__wrap'>
         {texts.map((text, index) => {
           return <Project key={index} index={index} text={text} setModal={setModal} />

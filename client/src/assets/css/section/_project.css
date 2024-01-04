@@ -24,7 +24,7 @@
     border-radius: 5px;
     overflow: hidden;
     position: relative;
-    height: 950px;
+    height: 850px;
 }
 
 .port-wrap .port::after {
@@ -50,13 +50,14 @@
     width: 100%;
     padding: 0;
     font-family: 'iceJaram-Rg';
-    font-size: 50px;
+    font-size: 3vw;
 }
 
 .port-wrap .port .info p {
     color: #fff;
     font-family: 'IropkeBatang';
     width: 100%;
+    font-size: 1vw;
 }
 
 .port-wrap .port .mp3 {
@@ -100,4 +101,126 @@
 .port-wrap .port .skill span:hover {
     transform: scale(1.1);
     background-color: rgba(255, 255, 255, 0.301);
+}
+
+@media (max-width:1500px) {
+    .port-wrap .port {
+        height: 800px;
+    }
+
+    .port-wrap .port .skill {
+        bottom: 50px;
+    }
+}
+
+@media (max-width:1400px) {
+    .port-wrap .port {
+        height: 750px;
+    }
+
+    .port-wrap .port .skill {
+        bottom: 50px;
+    }
+}
+
+@media (max-width:1300px) {
+    .port-wrap .port .skill {
+        bottom: 100px;
+    }
+
+    .port-wrap .port .skill span {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+
+    .port-wrap .port::after {
+        height: 80%;
+    }
+}
+
+@media (max-width:1200px) {
+    .port-wrap .port .skill {
+        bottom: 170px;
+    }
+
+    .port-wrap .port .skill span {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+    }
+
+    .port-wrap .port::after {
+        height: 70%;
+    }
+}
+
+
+
+@media (max-width:1150px) {
+    .port-wrap .port .skill {
+        bottom: 170px;
+    }
+
+    .port-wrap .port .skill span {
+        display: none;
+    }
+
+    .port-wrap .port .mp3 {
+        top: 40%;
+
+    }
+
+    .port-wrap .port::after {
+        height: 60%;
+    }
+}
+
+@media (max-width:1000px) {
+    .port-wrap .port .skill {
+        bottom: 170px;
+    }
+
+    .port-wrap .port .mp3 {
+        top: 35%;
+    }
+
+    .port-wrap .port::after {
+        height: 50%;
+    }
+}
+
+@media (max-width:850px) {
+
+
+    .port-wrap .port .mp3 {
+        top: 35%;
+    }
+
+    .port-wrap .port::after {
+        height: 40%;
+    }
+}
+
+@media (max-width:800px) {
+
+    .port-wrap .port .mp3 {
+        top: 30%;
+    }
+
+    .port-wrap .port::after {
+        height: 40%;
+    }
+}
+
+@media (max-width:600px) {
+
+
+    .port-wrap .port .mp3 {
+        display: none;
+    }
+
+    .port-wrap .port::after {
+        height: 20%;
+    }
 }

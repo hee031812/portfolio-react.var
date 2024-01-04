@@ -1,60 +1,48 @@
-#section06{
-    width: 100%;
-    height: 100vh;
-    padding-top: 10vw;
-}
-.container06 {
-    display: flex;
-    padding: 40px;
+#section6 {
+    padding: 5% 2%;
+    color: #F2EEE4;
 }
 
-
-.container06 .sec06_right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    padding-right: 5vw;
-}
-
-
-.sec06_right .bottom {
-    height: 65%;
-}
-
-.commentWrap fieldset {
-    width: 100%;
+#section6 .desc {
+    font-size: 3.8vw;
+    line-height: 1.2;
+    font-family: 'PPSupplyMono';
     font-weight: 100;
+    letter-spacing: -0.2vw;
+}
+
+.sec6-text {
     display: flex;
-    flex-direction: column;
-    border: 0 solid black;
+    padding-top: 14%;
 }
 
-.commentWrap .name input {
-    width: 100%;
-    height: 50px;
-    background-color: #a0a0a01f;
-    color: #F4F0E6;
-    margin-bottom: 20px;
-}
-
-.commentWrap .write input {
-    width: 100%;
-    height: 100px;
-    background-color: #a0a0a01f;
-    color: #F4F0E6;
+.sec6-text .text-left {
+    width: 55%;
     position: relative;
-    padding: 2px;
+
 }
 
-input::placeholder {
-    text-align: center;
-    color: #cccccc62;
+
+.sec6-text .text-left h3 {
+    position: sticky;
+    top: 70px;
+    font-family: 'Poppins';
+    color: #F2EEE4;
+    font-size: 6vw;
+    line-height: 0.9;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: -0.7vw;
+    font-family: "Poppins";
+
 }
+
+
 
 
 
 .commentWrap button {
-    width: 100%;
+    width: 80%;
     border-radius: 5px;
     height: 60px;
     display: flex;
@@ -71,121 +59,112 @@ input::placeholder {
     color: #F4F0E6;
 }
 
-.commentList {
-    margin-top: 2vw;
+.sec6-text .text-right {
+    width: 45%;
+    margin-top: -1.2vw;
 }
 
-.commentList h5 {
-    margin-top: 2vw;
-    font-size: 1.5vw;
-    border-radius: 2px;
-    text-align: center;
-    display: flex;
-    padding: 1px;
-    padding-top: 5px;
-    font-family: 'PPSupplyMono';
-    color: #fff;
+.sec6-text .text-right dt {
+    font-family: 'iceJaram-Rg';
+    font-size: 50px;
+    margin-top: 50px;
 }
 
-.chatBox {
-  height: 150px;
-  overflow-y: scroll;
-  padding: 10px;
-  background-color: #2828287e; /* 채팅창 배경색 */
-  font-family: 'Arial', sans-serif;
+.sec6-text .text-right dt.noTop {
+    margin-top: 0;
 }
 
-.message {
-  max-width: 60%;
-  margin-bottom: 10px;
-  padding: 5px;
-  border-radius: 10px;
-  position: relative;
+.sec6-text .text-right dd {
+    font-family: 'IropkeBatang';
+    font-size: 20px;
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 28px;
 }
 
-.sent {
-  align-self: flex-end;
-  background-color: #daf8cb; /* 보낸 메시지 배경색 */
-  margin-left: auto;
-}
-
-.received {
-  align-self: flex-start;
-  background-color: #ffffff; /* 받은 메시지 배경색 */
-}
-
-.text {
-  font-size: 14px;
-  margin: 5px;
-}
-
-.chatBox .time {
-  font-size: 12px;
-  color: #ff3b00;
-  position: absolute;
-  bottom: 5px;
-  right: 10px;
+.sec6-text .text-right dd::before {
+    content: '';
+    background-image: url(../../img/check.svg);
+    width: 18px;
+    height: 18px;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    border-radius: 3px;
 }
 
 
 
-.linkWrap {
-    display: flex;
-    align-content: center;
-    align-items: center;
+.comment-wrap {}
+
+.comment-wrap .comment {
+    margin-top: 100px;
 }
 
-.commentWrap {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    font-family: 'PPSupplyMono';
-    color: #F4F0E6;
-    padding-top: 5vw;
+.comment-wrap .comment.noTop {
+    margin-top: 0;
 }
 
-.commentWrap h5 {
-    font-size: 1.5vw;
+.comment-wrap .comment .title {
+    font-size: 6vw;
+    line-height: 1;
+    font-family: 'iceJaram-Rg';
+    display: inline-block;
+}
+
+.comment-wrap .comment .title em {
+    font-size: 30px;
+}
+
+.comment-wrap .comment .auth {
+    display: inline-block;
+    font-family: 'IropkeBatang';
     margin-bottom: 10px;
-    border-radius: 2px;
-    /* background-color: #5a5a5a5d; */
-    text-align: center;
-    display: flex;
-    padding: 1px;
-    padding-top: 5px;
-    margin-top: 1vw;
-    /* justify-content: center; */
+    font-size: 14px;
+    opacity: 0.4;
 }
 
-.commentWrap p {
-    padding-top: 1vw;
-    font-size: 0.9vw;
-    font-weight: 100;
-    padding-bottom: 1vw;
+.comment-wrap .comment .cont {
+    position: relative;
+    padding-left: 40px;
+    font-family: 'IropkeBatang';
+    font-size: 20px;
+    word-break: keep-all;
 }
 
+.comment-wrap .comment .cont::before {
+    content: '';
+    background-image: url(../../img/terminal.svg);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #F2EEE4;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
 
-/* .Iam {
-    padding: 8em 1.5em 0.5em 3em;
-    font: normal 60px/50px Headlines;
-    color: #F4F0E6;
-} */
-
- .Iam{
-    width: 50%;
+.Iam {
+    padding-top: 40px;
+    width: 100%;
     display: flex;
     font: normal 60px/50px Headlines;
     color: #F4F0E6;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .Iam p {
     height: 85px;
-    font-size: 12rem;
+    font-size: 7.5vw;
     float: left;
     margin-right: 0.3em;
+    font-family: "Poppins";
+    font-weight: 700;
 }
 
 .Iam b {
@@ -194,6 +173,7 @@ input::placeholder {
     position: relative;
     height: 50px;
     top: 40px;
+    font-family: "Poppins";
 }
 
 .Iam .innerIam {
@@ -203,7 +183,7 @@ input::placeholder {
     white-space: nowrap;
     top: 0;
     left: 0;
-    font-size: 3rem;
+    font-size: 2rem;
 
 
     /*animation*/
@@ -335,60 +315,90 @@ input::placeholder {
         top: -200px;
     }
 }
-@media(max-width:1100px){
-.Iam p {
-    font-size: 9rem;
-}
-.Iam .innerIam {
-    font-size: 2rem;
-}
-}
-@media(max-width:900px){
-.Iam p {
-    font-size: 7rem;
-}
-.Iam .innerIam {
-    font-size: 1.2rem;
-}
-}
-@media(max-width:650px){
-.container06 {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-}
-.Iam {
-    width: 100%;
 
-    display: flex;
-    font: normal 60px/50px Headlines;
-    color: #F4F0E6;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+@media(max-width: 1600px) {
+    .Iam {
+        padding-top: 30px;
+    }
+
+    .Iam p {
+        height: 80px;
+        font-size: 8vw;
+        float: left;
+        margin-right: 0.3em;
+    }
+
+    .Iam b {
+        top: -14px;
+    }
 }
-.container06 .sec06_right {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding-right: 5vw;
+
+@media(max-width: 1000px) {
+
+    .Iam {
+        padding-top: 15px;
+    }
+
+    .Iam b {
+        top: 2px;
+    }
 }
+
+@media(max-width: 800px) {
+
+
+    .Iam {
+        padding-top: 15px;
+    }
+
+    .Iam .innerIam {
+        display: none;
+    }
+
+    .sec6-text {
+        display: flex;
+        padding-top: 30%;
+        flex-direction: column;
+    }
+
+    .sec6-text .text-right {
+        width: 100%;
+        padding-top: -1.2vw;
+    }
+
+    .Iam b {
+        float: left;
+        overflow: hidden;
+        position: relative;
+        height: 50px;
+        top: 2px;
+        font-family: "Poppins";
+    }
+
 }
-@media(max-width:400px){
-.Iam p {
-    font-size:4rem;
+
+@media(max-width: 500px) {
+
+
+    .sec6-text {
+        display: flex;
+        padding-top: 50%;
+        flex-direction: column;
+    }
 }
-.Iam .innerIam {
-display: none;
-}
-.commentWrap h5 {
-    font-size: 5.5vw;
-}
-.commentWrap p {
-    font-size: 3.9vw;
-}
-.commentWrap button {
-    font-size: 5vw;
-}
+
+@media(max-width: 400px) {
+    .Iam p {
+        display: none;
+    }
+
+    .sec6-text {
+        display: flex;
+        padding-top: 80%;
+        flex-direction: column;
+    }
+
+
 
 }

@@ -71,16 +71,21 @@
 }
 
 .border {
-    width: 12vw;
+    padding: 5px 20px;
     border: 1px solid var(--subcolor);
-    border-radius: 5px;
+    border-radius: 2px;
     position: absolute;
     right: 20px;
     top: 70px;
     position: fixed;
     z-index: 29;
     background-color: transparent;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .border h3 {
@@ -88,6 +93,11 @@
     padding-top: 5px;
     font-family: 'VitroPride';
     font-size: 0.8vw;
+}
+
+.weatherIcon {
+    width: 50px;
+    height: 50px;
 }
 
 @media(max-width:1200px) {

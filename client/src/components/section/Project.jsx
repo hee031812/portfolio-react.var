@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-// import Frame00 from '../../assets/img/Frame00.png';
-// import Frame02 from '../../assets/img/Frame02.png';
-// import Frame04 from '../../assets/img/Frame04.png';
+import Frame00 from '../../assets/img/Frame00.png';
+import Frame02 from '../../assets/img/Frame02.png';
+import Frame04 from '../../assets/img/Frame04.png';
 import Frame05 from '../../assets/img/Frame05.png';
 import Frame06 from '../../assets/img/Frame06.png';
-// import Frame07 from '../../assets/img/Frame07.png';
+import Frame07 from '../../assets/img/Frame07.png';
 import Frame08 from '../../assets/img/Frame08.png';
 import recycle from '../../assets/img/분리의신.png';
 import petpar from '../../assets/img/PETPAR.png';
@@ -42,11 +42,11 @@ const Project = () => {
 
     return (
         <>
-              <div id="section3">
+            <div id="section3">
                 <h4>{"{ 포트폴리오 }"}</h4>
                 <div className="port-wrap">
                     <div className="port p1">
-                        <img src={Frame05} alt="" />
+                        <img src={Frame00} alt="" />
                         <div className="mp3">
                             <img src={recycle} alt="" />
                         </div>
@@ -66,7 +66,7 @@ const Project = () => {
                     </div>
 
                     <div className="port p2">
-                        <img src={Frame05} alt="" />
+                        <img src={Frame02} alt="" />
                         <div className="mp3">
                             <img src={petpar} alt="" />
                         </div>
@@ -85,7 +85,7 @@ const Project = () => {
                         </div>
                     </div>
                     <div className="port p3">
-                        <img src={Frame05} alt="" />
+                        <img src={Frame04} alt="" />
                         <div className="mp3">
                             <img src={movie} alt="" />
                         </div>
@@ -162,7 +162,7 @@ const Project = () => {
                         </div>
                     </div>
                     <div className="port p7">
-                        <img src={Frame08} alt="" />
+                        <img src={Frame07} alt="" />
                         <div className="mp3">
                             <img src={quiz2} alt="" />
                         </div>

@@ -40,7 +40,7 @@ const Intro = () => {
                 scrollTrigger: {
                     trigger: target,
                     start: "top bottom",
-                    end: "+400",
+                    end: "+4000",
                     markers: false,
                 },
             });
@@ -50,7 +50,7 @@ const Intro = () => {
 
         if (descRef.current) {
             const wrapCharacters = (element) => {
-                
+
             };
 
             wrapCharacters(descRef.current);
@@ -59,7 +59,7 @@ const Intro = () => {
         gsap.set(".char", { opacity: 0 });
         gsap.to(".char", {
             opacity: 1,
-            duration: 0.5,
+            duration: 0.3,
             stagger: 0.05,
             ease: "power2.inOut"
         });
@@ -87,7 +87,8 @@ const Intro = () => {
                 trigger: img,
                 start: "top center",
                 end: "bottom top",
-                scrub: true
+                scrub: true,
+                markers: false
             },
             yPercent: -10,
             scale: 1.2,
@@ -115,16 +116,16 @@ const Intro = () => {
                     Hello, I'm Kim Heejin.<br />
                     I have a dream of Front and <br />I'm working hard to make it a
                     reality.<br />
-                    If you want to see the outcome of the effort,
+                    If you want to see the outcome of the effort,<br />
                     please scroll down.Hope you have a good time.·͜·<br />
                 </div>
                 <div className="text">
                     <div>24</div>
                     <div>turn</div>
                     <div>my life</div>
-             <div class="img">
-                <img src={myimg} alt="dd" />
-            </div>
+                    <div class="img">
+                        <img src={myimg} alt="dd" />
+                    </div>
                 </div>
             </div>
         </>

@@ -3,10 +3,13 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Header = () => {
+    const [weatherIcon, setWeatherIcon] = useState(''); // 날씨 아이콘 URL
     const [currentTime, setCurrentTime] = useState('');
     const [currentTemp, setCurrentTemp] = useState('');
-    // const [lowTemp, setLowTemp] = useState('');
     const [highTemp, setHighTemp] = useState('');
+
+
+
 
     useEffect(() => {
         const updateHeaderAside = () => {
@@ -32,14 +35,18 @@ const Header = () => {
                 const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=Seoul&appid=652fdcd06848fb153a7c4d83d2500d7e&units=metric');
                 const data = await response.json();
                 setCurrentTemp(data.main.temp);
-                // setLowTemp(data.main.temp_min);
                 setHighTemp(data.main.temp_max);
+
+                const iconCode = data.weather[0].icon;
+                const iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
+                setWeatherIcon(iconUrl);
             } catch (error) {
                 console.error('Error fetching weather data:', error);
             }
         };
 
         fetchWeatherData();
+
         gsap.registerPlugin(ScrollTrigger);
         gsap.to(".border", {
             yPercent: 100,
@@ -48,7 +55,8 @@ const Header = () => {
                 trigger: document.body,
                 start: "top top",
                 end: "bottom bottom",
-                scrub: true
+                scrub: true,
+                markers: false,
             }
         });
 
@@ -78,7 +86,8 @@ const Header = () => {
                 </div>
             </header>
             <div class="border">
-                <h3 className="ctemp">⛅ 현재온도:{currentTemp} </h3>
+                <img className='weatherIcon' src={weatherIcon} alt="Weather Icon" />
+                <h3 className="ctemp">🌡 현재온도:{currentTemp} </h3>
                 {/* <h3 className="lowtemp">최저온도: </h3> */}
                 <h3 className="hightemp">🌡 최고온도: {highTemp} </h3>
 
