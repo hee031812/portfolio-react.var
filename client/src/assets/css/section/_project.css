@@ -11,7 +11,6 @@
 
 .port-wrap {
     display: flex;
-    flex-wrap: wrap;
     padding: 5px 20px;
     width: 400%;
 }
@@ -103,124 +102,172 @@
     background-color: rgba(255, 255, 255, 0.301);
 }
 
-@media (max-width:1500px) {
+@media (max-width: 1500px) {
     .port-wrap .port {
-        height: 800px;
-    }
-
-    .port-wrap .port .skill {
-        bottom: 50px;
+        width: calc(40vw - 60px);
+        height: auto;
     }
 }
 
-@media (max-width:1400px) {
+@media (max-width: 1200px) {
+    .port-wrap {
+        display: flex;
+        padding: 5px 20px;
+        width: 900%;
+    }
+
     .port-wrap .port {
-        height: 750px;
-    }
-
-    .port-wrap .port .skill {
-        bottom: 50px;
+        width: calc(51vw - 60px);
+        height: auto;
     }
 }
 
-@media (max-width:1300px) {
-    .port-wrap .port .skill {
-        bottom: 100px;
+
+@media (max-width: 1000px) {
+    .port-wrap {
+        display: flex;
+        padding: 5px 20px;
+        width: 900%;
     }
 
-    .port-wrap .port .skill span {
-        width: 80px;
-        height: 80px;
-        line-height: 80px;
+    .port-wrap .port {
+        width: calc(61vw - 60px);
+        height: auto;
     }
 
-    .port-wrap .port::after {
-        height: 80%;
-    }
-}
-
-@media (max-width:1200px) {
-    .port-wrap .port .skill {
-        bottom: 170px;
+    .port-wrap .port .info p {
+        font-size: 1.5vw;
     }
 
-    .port-wrap .port .skill span {
-        width: 70px;
-        height: 70px;
-        line-height: 70px;
-    }
-
-    .port-wrap .port::after {
-        height: 70%;
+    .port-wrap .port .info h5 {
+        font-size: 3.5vw;
     }
 }
 
 
 
-@media (max-width:1150px) {
-    .port-wrap .port .skill {
-        bottom: 170px;
+@media (max-width: 800px) {
+    .port-wrap {
+        display: flex;
+        padding: 5px 20px;
+        width: 900%;
+    }
+
+    .port-wrap .port {
+        width: calc(77vw - 101px);
+        height: auto;
+    }
+
+    .port-wrap .port .info p {
+        font-size: 2vw;
+    }
+
+    .port-wrap .port .info h5 {
+        font-size: 4vw;
+    }
+
+    #section3 h4 {
+        padding-top: 6vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .port-wrap {
+        display: flex;
+        padding: 5px 20px;
+        width: 900%;
+    }
+
+    .port-wrap .port {
+        width: calc(100vw - 60px);
+        height: auto;
+    }
+
+    .port-wrap .port .info p {
+        font-size: 3vw;
+    }
+
+    .port-wrap .port .info h5 {
+        font-size: 8vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .port-wrap {
+        display: flex;
+        padding: 5px 20px;
+        width: 900%;
+    }
+
+    .port-wrap .port {
+        width: calc(120vw - 150px);
+        height: auto;
+    }
+
+    #section3 h4 {
+        padding: 16px 23px 0;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: 'iceJaram-Rg';
+        padding-top: 16vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .port-wrap {
+        display: flex;
+        padding: 5px 20px;
+        width: 900%;
+    }
+
+    .port-wrap .port {
+        width: calc(130vw - 130px);
+        height: auto;
+    }
+
+    .port-wrap .port .info p {
+        font-size: 3vw;
+    }
+
+    .port-wrap .port .info h5 {
+        font-size: 8vw;
+    }
+
+    #section3 h4 {
+        padding-top: 30vw;
     }
 
     .port-wrap .port .skill span {
         display: none;
     }
-
-    .port-wrap .port .mp3 {
-        top: 40%;
-
-    }
-
-    .port-wrap .port::after {
-        height: 60%;
-    }
 }
 
-@media (max-width:1000px) {
-    .port-wrap .port .skill {
-        bottom: 170px;
+@media (max-width: 350px) {
+    .port-wrap {
+        display: flex;
+        padding: 5px 20px;
+        width: 900%;
     }
 
-    .port-wrap .port .mp3 {
-        top: 35%;
+    .port-wrap .port {
+        width: calc(143vw - 133px);
+        height: auto;
     }
 
-    .port-wrap .port::after {
-        height: 50%;
-    }
-}
-
-@media (max-width:850px) {
-
-
-    .port-wrap .port .mp3 {
-        top: 35%;
+    .port-wrap .port .info p {
+        font-size: 3.5vw;
     }
 
-    .port-wrap .port::after {
-        height: 40%;
-    }
-}
-
-@media (max-width:800px) {
-
-    .port-wrap .port .mp3 {
-        top: 30%;
+    .port-wrap .port .info h5 {
+        font-size: 8vw;
     }
 
-    .port-wrap .port::after {
-        height: 40%;
+    #section3 h4 {
+        padding-top: 74vw;
+        font-size: 6vw;
     }
-}
 
-@media (max-width:600px) {
-
-
-    .port-wrap .port .mp3 {
+    .port-wrap .port .skill span {
         display: none;
-    }
-
-    .port-wrap .port::after {
-        height: 20%;
     }
 }

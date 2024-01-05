@@ -147,92 +147,86 @@ img {
     background-color: transparent;
 }
 
-@media(max-width:1000px) {
+@media (max-width: 1200px) {
     .project .left span {
-        font-size: 1.8vw;
-    }
-
-    .project .left i {
-        font-size: 2vw;
-        font-weight: 500;
-        font-family: 'Poppins';
-    }
-
-    .project .left p {
         font-size: 1.5vw;
-        font-family: 'IropkeBatang';
-        margin-bottom: 10px;
-    }
-}
-
-@media(max-width:800px) {
-    .project .left span {
-        font-size: 2vw;
     }
 
     .project .left i {
-        font-size: 2.2vw;
-        font-weight: 500;
-        font-family: 'Poppins';
+        font-size: 1.8vw;
     }
 
     .project .left p {
         font-size: 1.8vw;
-        font-family: 'IropkeBatang';
-        margin-bottom: 10px;
     }
 }
 
-@media(max-width:600px) {
+@media (max-width: 800px) {
     .project .left span {
-        font-size: 2.2vw;
+        font-size: 1.8vw;
     }
 
     .project .left i {
-        font-size: 2.5vw;
-        font-weight: 500;
-        font-family: 'Poppins';
+        font-size: 2.1vw;
     }
 
     .project .left p {
-        font-size: 2vw;
-        font-family: 'IropkeBatang';
-        margin-bottom: 10px;
+        font-size: 2.1vw;
+    }
+
+    #section4 .sec04_desc {
+        font-size: 6vw;
+
+    }
+
+    #section4 .sec04_text {
+        font-size: 30vw;
+
     }
 }
 
-@media(max-width:500px) {
+@media (max-width: 500px) {
     .project .left span {
-        font-size: 2.8vw;
+        font-size: 3.5vw;
     }
 
     .project .left i {
-        font-size: 3.1vw;
-        font-weight: 500;
-        font-family: 'Poppins';
+        font-size: 4vw;
     }
 
     .project .left p {
-        font-size: 2.6vw;
-        font-family: 'IropkeBatang';
-        margin-bottom: 10px;
+        font-size: 4vw;
+    }
+
+    #section4 .sec04_desc {
+        font-size: 6.2vw;
+
+    }
+
+    #section4 .sec04_text {
+        font-size: 30vw;
+
     }
 }
 
-@media(max-width:400px) {
+@media (max-width: 350px) {
     .project .left span {
-        font-size: 3.4vw;
+        font-size: 5vw;
     }
 
     .project .left i {
-        font-size: 3.6vw;
-        font-weight: 500;
-        font-family: 'Poppins';
+        font-size: 6vw;
     }
 
     .project .left p {
-        font-size: 3vw;
-        font-family: 'IropkeBatang';
-        margin-bottom: 10px;
+        font-size: 4.5vw;
+    }
+
+    #section4 .sec04_desc {
+        font-size: 6.2vw;
+    }
+
+    #section4 .sec04_text {
+        font-size: 30vw;
     }
 }

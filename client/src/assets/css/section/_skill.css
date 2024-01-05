@@ -129,10 +129,30 @@
     right: 0;
 }
 
+@media(max-width: 1000px) {
+    .skill__desc dd {
+        font-size: 18px;
+    }
+
+    .skill__desc .num {
+        font-size: 3vw;
+    }
+
+    .skill__desc h3 {
+        font-size: 4vw;
+    }
+}
+
 @media(max-width: 800px) {
+    #section05 {
+        padding: 0 5%;
+    }
+
     .skill__inner {
         flex-direction: column;
     }
+
+
 
     .skill__title {
         width: 100%;
@@ -146,7 +166,7 @@
     }
 
     .skill__desc h3 {
-        font-size: 18px;
+        font-size: 45px;
     }
 
     .skill__desc p {
@@ -158,12 +178,16 @@
         font-size: 20vw;
     }
 
-    .skill__title {
-        display: none;
+    .skill__desc .num {
+        font-size: 6vw;
     }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 500px) {
+    .skill__inner {
+        padding: 5% 5%;
+    }
+
     .skill__desc .num {
         font-size: 10vw;
     }
@@ -172,31 +196,8 @@
         font-size: 40px;
     }
 
-    .skill__desc p {
-        font-size: 12px;
-    }
-
-    .skill__desc .num {
-        padding-top: 10vw;
-    }
-
-    #section05 .sec05__desc {
-        display: none;
-    }
-}
-
-@media(max-width: 600px) {
-    .skill__desc .num {
-        font-size: 8vw;
-    }
-
-    .skill__desc h3 {
-        font-size: 40px;
-    }
-
     .skill__desc dd {
-        font-size: 15px;
-
+        font-size: 16px;
     }
 
     .skill__desc .num {

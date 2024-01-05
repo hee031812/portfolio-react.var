@@ -337,19 +337,22 @@
 @media(max-width: 1000px) {
 
     .Iam {
-        padding-top: 15px;
+        padding-top: 8px;
     }
 
     .Iam b {
-        top: 2px;
+        top: -22px;
     }
 }
 
 @media(max-width: 800px) {
-
+    #section6 {
+        padding: 5% 5%;
+        color: #F2EEE4;
+    }
 
     .Iam {
-        padding-top: 15px;
+        padding-top: 1px;
     }
 
     .Iam .innerIam {
@@ -376,19 +379,68 @@
         font-family: "Poppins";
     }
 
+    .comment-wrap .comment .cont {
+        position: relative;
+        padding-left: 40px;
+        font-family: 'IropkeBatang';
+        font-size: 18px;
+        word-break: keep-all;
+    }
+
 }
 
 @media(max-width: 500px) {
 
+    .Iam {
+        padding-top: 0.2px;
+    }
 
     .sec6-text {
         display: flex;
         padding-top: 50%;
         flex-direction: column;
     }
+
+    .sec6-text .text-left {
+        width: 80%;
+        position: relative;
+    }
+
+    .sec6-text .text-left h3 {
+        font-size: 10vw;
+    }
+
+    .Iam p {
+        height: 80px;
+        font-size: 11vw;
+        float: left;
+        margin-right: 0.3em;
+    }
 }
 
 @media(max-width: 400px) {
+    .sec6-text .text-left {
+        width: 100%;
+        position: relative;
+    }
+
+    .sec6-text .text-left h3 {
+        font-size: 12vw;
+        padding: 2%;
+    }
+
+    .comment-wrap .comment .title {
+        font-size: 15vw;
+    }
+
+    .comment-wrap .comment .cont {
+        font-size: 15px;
+    }
+
+    .sec6-text .text-right {
+        padding: 5%;
+    }
+
     .Iam p {
         display: none;
     }
