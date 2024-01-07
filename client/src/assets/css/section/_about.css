@@ -185,3 +185,8 @@
     font-size: 20px;
     font-weight: bold;
 }
+@media(max-width:350px){
+        #section2 p {
+    font-size: 16px;
+}
+}

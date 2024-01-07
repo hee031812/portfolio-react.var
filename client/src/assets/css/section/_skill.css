@@ -38,7 +38,7 @@
 
 .skill__title {
     position: sticky;
-    top: 70px;
+    top: 100px;
     left: 0;
     width: 48%;
     height: 5vw;
@@ -152,13 +152,8 @@
         flex-direction: column;
     }
 
-
-
     .skill__title {
-        width: 100%;
-        margin-bottom: 10vw;
-        height: auto;
-        background-color: var(--mainBg-color);
+       display: none;
     }
 
     .skill__desc {
@@ -181,9 +176,12 @@
     .skill__desc .num {
         font-size: 6vw;
     }
+    #section05 .sec05__desc {
+    padding: 1% 1%;
+}
 }
 
-@media(max-width: 500px) {
+@media(max-width: 450px) {
     .skill__inner {
         padding: 5% 5%;
     }

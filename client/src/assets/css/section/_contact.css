@@ -8,6 +8,9 @@
 #section07 .top {
     width: 100%;
     height: 25%;
+  opacity: 0;
+  transform: translateY(150px);
+  transition: all 0.3s ease-out;
 }
 
 .contectWrap {
@@ -46,6 +49,9 @@
     width: 100%;
     height: 60%;
     display: flex;
+       opacity: 0;
+  transform: translateY(150px);
+  transition: all 0.3s ease-out;
 }
 
 .bottom .bottom_left {
@@ -89,7 +95,12 @@ input {
     background-color: #44444456;
     border-radius: 2px;
     height: 4vw;
+    color: #fff;
 }
+    input::placeholder {
+    text-align: center;
+    padding: 3px;
+    }
 
 textarea {
     border-radius: 2px;
@@ -97,7 +108,14 @@ textarea {
     background-color: #44444456;
     resize: none;
     height: 6vw;
+    margin-left: 10px;
+    color: #fff;
 }
+    textarea::placeholder {
+    text-align: center;
+    padding: 10px;
+
+    }
 
 fieldset {
     width: 90%;
@@ -156,6 +174,10 @@ fieldset {
     height: 10%;
     margin-top: 2.5vw;
     padding: 2%;
+      opacity: 0;
+  transform: translateY(150px);
+  transition: all 0.3s ease-out;
+    
 }
 
 .footerLeft {
@@ -182,6 +204,8 @@ fieldset {
     font-size: 1.5vw;
     font-family: "Headlines";
 }
+
+
 
 @media(max-width:1400px) {
     .contactWrap {
@@ -369,7 +393,11 @@ fieldset {
         margin-top: 10px;
         background-color: #44444456;
         border-radius: 2px;
-        height: 4vw;
+        height: 8vw;
+    }
+    input::placeholder {
+    text-align: center;
+    padding: 3px;
     }
 
     textarea {
@@ -377,6 +405,107 @@ fieldset {
         margin-top: 10px;
         background-color: #44444456;
         resize: none;
-        height: 6vw;
+        height: 12vw;
     }
+        textarea::placeholder {
+        padding: 10px;
+        text-align: center;
+    }
+    .footer_logo {
+    font-size: 5.5vw;
+}
+
+.footer_mail {
+    font-size: 2.5vw;
+}
+.footer_mail {
+    padding-left: 30px;
+}
+.contactSite>div {
+    font-size: 4vw;
+}
+.commentWrap .conDesc {
+    padding-bottom: 10px;
+}
+#section07 .top {
+    height: 18%;
+}
+#section07 .bottom {
+    height: 65%;
+}
+.footer {
+    height: 13%;
+}
+}
+@media(max-width: 450px) {
+textarea {
+    height: 11vw;
+    overflow: hidden;
+}
+textarea::placeholder {
+padding: 5px;
+text-align: center;
+}
+.commentWrap .conDesc {
+    font-size: 3.5vw;
+}
+.contactWrap .conDesc {
+    font-size: 3.5vw;
+}
+#section07 .top {
+    height: 13%;
+}
+#section07 .bottom {
+    height: 73%;
+}
+.contectWrap {
+    padding: 20% 5%;
+}
+.bottom .bottom_left {
+    padding: 27% 5% 5%;
+    width: 100%;
+    font-family: 'EliceDigitalBaeum';
+}
+.bottom .bottom_right {
+    padding: 5% 5%;
+}
+.footer {
+    height: 10%;
+}
+}
+
+
+
+@media(max-width: 350px) {
+textarea {
+    height: 11vw;
+    overflow: hidden;
+}
+textarea::placeholder {
+padding: 5px;
+text-align: center;
+}
+.commentWrap .conDesc {
+    font-size: 3.5vw;
+}
+.contactWrap .conDesc {
+    font-size: 3.5vw;
+}
+#section07 .top {
+    height: 13%;
+}
+#section07 .bottom {
+    height: 70%;
+}
+.contectWrap {
+    padding: 30% 5%;
+}
+.bottom .bottom_left {
+    padding: 35% 5% 5%;
+    width: 100%;
+    font-family: 'EliceDigitalBaeum';
+}
+.bottom .bottom_right {
+    padding: 10% 5%;
+}
 }

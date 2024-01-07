@@ -1,6 +1,51 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 
 const Contact = () => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.to(".top", {
+      scrollTrigger: {
+        trigger: "#section07",
+        start: "top bottom",
+        end: "bottom bottom",
+        toggleActions: "play none none reverse",
+        markers: true,
+      },
+      opacity: 1,
+      y: 0,
+      duration: 1,
+    });
+
+    gsap.to(".bottom", {
+      scrollTrigger: {
+        trigger: "#section07",
+        start: "top bottom",
+        end: "bottom top",
+        toggleActions: "play none none reverse",
+        markers: true,
+      },
+      opacity: 1,
+      y: 0,
+      duration: 1.5,
+    });
+
+    gsap.to(".footer", {
+      scrollTrigger: {
+        trigger: "#section07",
+        start: "top bottom",
+        end: "bottom top",
+        toggleActions: "play none none reverse",
+      },
+      opacity: 1,
+      y: 0,
+      duration: 2,
+    });
+  }, []);
+
   return (
     <>
       <div id='section07'>
