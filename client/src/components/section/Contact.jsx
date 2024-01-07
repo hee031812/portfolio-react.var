@@ -1,10 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect ,useState} from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import axios from 'axios';
 
 
 const Contact = () => {
+  const [author, setAuthor] = useState(''); // 사용자 이름 상태
+  const [content, setContent] = useState(''); // 댓글 내용 상태
+
   useEffect(() => {
+
+   
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.to(".top", {
@@ -46,6 +52,23 @@ const Contact = () => {
     });
   }, []);
 
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // 폼 기본 동작 방지
+    try {
+      const response = await axios.post('/api/write', { author, content }); 
+      if (response.data.success) {
+        alert('댓글이 성공적으로 작성되었습니다.');
+        setAuthor(''); // 입력 필드 초기화
+        setContent('');
+      } else {
+        alert('댓글 작성에 실패했습니다.');
+      }
+    } catch (error) {
+      console.error('댓글 작성 중 에러 발생:', error);
+      alert('댓글 작성 중 문제가 발생했습니다.');
+    }
+  };
+
   return (
     <>
       <div id='section07'>
@@ -61,16 +84,30 @@ const Contact = () => {
             <div className="commentWrap">
               <p className='con'>comment</p>
               <p className='conDesc'>Please Write a Valuable Comment</p>
-              <fieldset>
-                <div className="name">
-                  <p>{"{ name }"}</p>
-                  <input type="text" placeholder='이름을 입력해주세요' />
-                </div>
-                <div className="content">
-                  <p>{"{ content }"}</p>
-                  <textarea type="text" placeholder='댓글을 입력해주세요' />
-                </div>
-              </fieldset>
+ <fieldset>
+          <form onSubmit={handleSubmit}>
+            <div className="name">
+              <label htmlFor="nameInput">Name</label>
+              <input
+                type="text"
+                id="nameInput"
+                value={author}
+                onChange={(e) => setAuthor(e.target.value)}
+                placeholder="Your name"
+              />
+            </div>
+            <div className="content">
+              <label htmlFor="contentInput">Content</label>
+              <textarea
+                id="contentInput"
+                value={content}
+                onChange={(e) => setContent(e.target.value)}
+                placeholder='Enter your comment'
+              />
+            </div>
+            <button type="submit">Submit Comment</button>
+          </form>
+        </fieldset>
             </div>
           </div>
           <div className="bottom_right">

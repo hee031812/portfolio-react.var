@@ -39,7 +39,7 @@
 
 
 .commentWrap button {
-    width: 80%;
+    width: 98%;
     border-radius: 5px;
     height: 60px;
     display: flex;
@@ -49,6 +49,7 @@
     margin-top: 20px;
     cursor: pointer;
     font-size: 1vw;
+    margin-left: 10px;
 }
 
 .commentWrap button:hover {

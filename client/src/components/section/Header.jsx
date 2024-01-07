@@ -71,7 +71,7 @@ const Header = () => {
         <>
             <header id="header">
                 <div className="left">
-                    <h1>Developer</h1>
+                    <h1><a href="/#section1">Developer</a> </h1>
                     <ul>
                         <li><a href="/#section1">about</a></li>
                         <li><a href="/#section3">project</a></li>

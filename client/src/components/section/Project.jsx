@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Frame00 from '../../assets/img/Frame01.png';
@@ -15,6 +16,7 @@ import youtube from '../../assets/img/유튜브.png';
 import trip from '../../assets/img/여행블로그 php.png';
 import quiz1 from '../../assets/img/퀴즈.png';
 import quiz2 from '../../assets/img/유퀴즈.png';
+import { Link } from 'react-router-dom';
 
 
 const Project = () => {
@@ -61,7 +63,8 @@ const Project = () => {
                         <div className="skill">
                             <span>React</span>
                             <span>Scss</span>
-                            <span>detail</span>
+                            <Link to="/detail1"><span >detail</span></Link> 
+                        
                         </div>
                     </div>
 

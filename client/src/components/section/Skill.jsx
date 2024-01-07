@@ -3,8 +3,8 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
 
-
 const Skill = () => {
+    
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
