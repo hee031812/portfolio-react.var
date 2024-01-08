@@ -1,9 +1,13 @@
 import React, { useEffect } from "react";
-import { Routes, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import Main from './components/Main.jsx'
 import { smooth } from "./utills/smooth.js";
-import Detail1 from "./components/subpages/Detail1.jsx";
+import About from "./components/section/About.jsx";
+import Header from "./components/section/Header.jsx";
+import Intro from "./components/section/Intro.jsx";
+import Project from "./components/section/Project.jsx";
+import SubProject from "./components/section/SubProject.jsx";
+import Skill from "./components/section/Skill.jsx";
+import Comment from "./components/section/Comment.jsx";
+import Contact from "./components/section/Contact.jsx";
 
 
 
@@ -14,16 +18,17 @@ const App = () => {
   });
   return (
     <>
-      <Main>
-        <Routes>
-          <Route path='/' element={<Home />}></Route>
-          <Route path='/detail1' element={<Detail1 />}></Route>
-        </Routes>
-      </Main>
+      <Header />
+      <Intro />
+      <About />
+      <Project />
+      <SubProject />
+      <Skill />
+      <Comment />
+      <Contact />
+
     </>
   )
 }
 
 export default App
-
-

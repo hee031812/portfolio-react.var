@@ -452,7 +452,111 @@
 }
 
 @media(max-width: 350px) {
-.sec6-text {
-    padding-top: 110%;
+    .sec6-text {
+        padding-top: 110%;
+    }
 }
+
+
+.comment-wrap .comment {
+    margin-top: 100px;
+}
+
+.comment-wrap .comment.noTop {
+    margin-top: 0;
+}
+
+.comment-wrap .comment .title {
+    font-size: 8vw;
+    line-height: 1;
+    font-family: 'iceJaram-Rg';
+    display: inline-block;
+}
+
+.comment-wrap .comment .title em {
+    font-size: 30px;
+}
+
+.comment-wrap .comment .auth {
+    display: inline-block;
+    font-family: 'IropkeBatang';
+    margin-bottom: 10px;
+    font-size: 14px;
+    opacity: 0.4;
+}
+
+.comment-wrap .comment .cont {
+    position: relative;
+    padding-left: 40px;
+    font-family: 'IropkeBatang';
+    font-size: 20px;
+    word-break: keep-all;
+}
+
+.comment-wrap .comment .cont::before {
+    content: '';
+    background-image: url(../../img/PETPAR.png);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #F2EEE4;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.comment-wrap .comment form {}
+
+.comment-wrap .comment form legend {
+    display: none;
+}
+
+.comment-wrap .comment form fieldset {
+    padding: 10px;
+    border: 1px solid #cccccc7c;
+}
+
+.comment-wrap .comment form fieldset label {
+    display: none;
+}
+
+.comment__form .input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'IropkeBatang';
+    margin-bottom: 10px;
+}
+
+.comment__form .input input {
+    border: 0;
+    background: transparent;
+    border: 1px solid #cccccc7c;
+    width: 49%;
+    padding: 10px;
+    font-family: 'IropkeBatang';
+}
+
+.comment__form .text textarea {
+    border: 0;
+    background: transparent;
+    border: 1px solid #cccccc7c;
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    font-family: 'IropkeBatang';
+
+}
+
+.comment__form button {
+    border: 0;
+    background: transparent;
+    border: 1px solid #cccccc7c;
+    width: 100%;
+    padding: 10px;
+    color: #cccccc7c;
+    font-family: 'IropkeBatang';
 }

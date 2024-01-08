@@ -25,7 +25,6 @@
     color: #fff;
     padding-top: 5vw;
     letter-spacing: -0.2vw;
-
 }
 
 
@@ -153,7 +152,7 @@
     }
 
     .skill__title {
-       display: none;
+        display: none;
     }
 
     .skill__desc {
@@ -176,9 +175,10 @@
     .skill__desc .num {
         font-size: 6vw;
     }
+
     #section05 .sec05__desc {
-    padding: 1% 1%;
-}
+        padding: 1% 1%;
+    }
 }
 
 @media(max-width: 450px) {

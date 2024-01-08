@@ -4,7 +4,7 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 
 const Skill = () => {
-    
+
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
 
@@ -21,6 +21,10 @@ const Skill = () => {
                 gsap.to(".country", { color: "#fff", duration: 1.4 });
                 gsap.to("#coordinates", { color: "#fff", duration: 1.4 });
                 gsap.to(".border", { color: "#fff", duration: 1.4 });
+
+                if (document.querySelector("#section07")) {
+                    gsap.to("#section07", { backgroundColor: "#fff", duration: 0.8 });
+                }
             },
             onEnterBack: () => {
                 gsap.to("body", { backgroundColor: "#1A1A1A", duration: 0.8 });
@@ -52,6 +56,7 @@ const Skill = () => {
             trigger.kill();
         };
     }, []);
+
     return (
         <div id="section05">
             <div className='sec05__desc'>
