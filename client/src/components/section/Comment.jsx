@@ -1,22 +1,6 @@
-import React, { useEffect } from 'react'; // 수정된 부분
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 
 const Comment = () => {
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-
-        ScrollTrigger.create({
-            trigger: '#section7',
-            start: 'top bottom',
-            onEnter: () => {
-                gsap.to('#section7', { backgroundColor: '#F2EEE4' });
-            },
-            onLeaveBack: (self) => {
-                self.disable();
-            }
-        });
-    }, []);
 
     return (
         <>

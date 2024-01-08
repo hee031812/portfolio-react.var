@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+
 
 const Layer = ({ project }) => {
-    if (!project) {
+   const [isVisible, setIsVisible] = useState(true); // State to control visibility
+
+    if (!project || !isVisible) {
         return null;
     }
+
+    const handleClose = () => {
+        setIsVisible(false); // Function to handle close action
+    }
+
 
     return (
         <div className="layer">
@@ -14,7 +23,7 @@ const Layer = ({ project }) => {
                             <img src={project.image} alt={project.name} />
                         </div>
                         <div className="layer__right">
-                            <h4>{project.name}</h4>
+                            <h6>{project.name}</h6>
                             <div className='layerStack'>
                                 <div>{project.stack1}</div>
                                 <div>{project.stack2}</div>
@@ -30,7 +39,7 @@ const Layer = ({ project }) => {
                             </div>
                             <div className='showWrap'>
                                 <div className='show'>show</div>
-                                <div className="close">close</div>
+                            <div className="close" onClick={handleClose}>close</div>
                             </div>
                         </div>
                     </div>

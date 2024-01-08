@@ -90,7 +90,7 @@ const Project = () => {
                         <div className="skill">
                             <span>React</span>
                             <span>Scss</span>
-                            <span>detail</span>
+                           <span onClick={() => toggleLayer('patpar')}>detail</span>
                         </div>
                     </div>
                     <div className="port p3">
@@ -109,7 +109,7 @@ const Project = () => {
                         <div className="skill">
                             <span>Vue.js</span>
                             <span>Scss</span>
-                            <span>detail</span>
+                            <span onClick={() => toggleLayer('movie')}>detail</span>
                         </div>
                     </div>
                     <div className="port p4">
@@ -128,7 +128,7 @@ const Project = () => {
                         <div className="skill">
                             <span>React</span>
                             <span>Scss</span>
-                            <span>detail</span>
+                            <span onClick={() => toggleLayer('youtube')}>detail</span>
                         </div>
                     </div>
                     <div className="port p5">
@@ -148,7 +148,7 @@ const Project = () => {
                         <div className="skill">
                             <span>PHP</span>
                             <span>Css</span>
-                            <span>detail</span>
+                            <span onClick={() => toggleLayer('phpblog')}>detail</span>
                         </div>
                     </div>
                     <div className="port p6">
@@ -167,7 +167,7 @@ const Project = () => {
                         <div className="skill">
                             <span>Java</span>
                             <span>Css</span>
-                            <span>detail</span>
+                            <span onClick={() => toggleLayer('quiz')}>detail</span>
                         </div>
                     </div>
                     <div className="port p7">
@@ -186,7 +186,7 @@ const Project = () => {
                         <div className="skill">
                             <span>Java</span>
                             <span>Css</span>
-                            <span>detail</span>
+                            <span onClick={() => toggleLayer('uquiz')}>detail</span>
                         </div>
                     </div>
                 </div>

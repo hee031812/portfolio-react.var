@@ -36,8 +36,8 @@
 }
 
 .skill__title {
-    position: sticky;
-    top: 100px;
+    position: sticky !important;
+    top: 90px;
     left: 0;
     width: 48%;
     height: 5vw;

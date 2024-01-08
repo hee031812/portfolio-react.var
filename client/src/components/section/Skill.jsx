@@ -21,10 +21,6 @@ const Skill = () => {
                 gsap.to(".country", { color: "#fff", duration: 1.4 });
                 gsap.to("#coordinates", { color: "#fff", duration: 1.4 });
                 gsap.to(".border", { color: "#fff", duration: 1.4 });
-
-                if (document.querySelector("#section07")) {
-                    gsap.to("#section07", { backgroundColor: "#fff", duration: 0.8 });
-                }
             },
             onEnterBack: () => {
                 gsap.to("body", { backgroundColor: "#1A1A1A", duration: 0.8 });
@@ -51,6 +47,7 @@ const Skill = () => {
                 }
             },
         });
+        
 
         return () => {
             trigger.kill();
@@ -65,10 +62,10 @@ const Skill = () => {
             </div>
             <section id="skill">
                 <div className="skill__inner">
-                    <h2 className="skill__title">
+                    <div className="skill__title">
                         Which stack<br />
                         do you use?
-                    </h2>
+                    </div>
                     <div className="skill__desc">
                         <div>
                             <div className="num">01.</div>

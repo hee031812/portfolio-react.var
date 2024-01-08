@@ -5,6 +5,7 @@
     height: 100vh;
     font-size: 30px;
     font-family: 'PPSupplyMono';
+
 }
 
 #section7 {
@@ -25,14 +26,19 @@
 
 #section7 .bottom li {
     display: inline;
+        color: #F14620;
 }
 
 #section7 .bottom li a {
     font-size: 16px;
     text-emphasis-style: dot;
     padding: 5px 30px;
+    transition: transform 0.3s ease;
+    color: #F14620 !important;
 }
+
 
 #section7 .bottom li a:hover {
     text-emphasis-color: #000;
+transform: translateY(50px); 
 }
