@@ -3,17 +3,17 @@ const path = require("path");
 const mongoose = require("mongoose");
 
 const app = express();
-// const port = process.env.PORT || 5050;
 const port = 5050;
-// const config = require("./server/config/key.js");
 const config = require("./config/key.js");
 
-app.use(express.static(path.join(__dirname, "./client/build")));
+app.use(express.static(path.join(__dirname, "../client/build")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // express router
+
 app.use("/api/reple", require("./router/reple.js"));
+
 
 app.listen(port, () => {
     mongoose
@@ -28,8 +28,8 @@ app.listen(port, () => {
 })
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+    res.sendFile(path.join(__dirname, "../client/build/index.html"));
 })
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+    res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });

@@ -2,11 +2,11 @@ const mongoose = require("mongoose");
 
 const repleSchema = new mongoose.Schema(
     {
-        author: String,
-        content: String,
-        repleNum: Number,
+        reple: String,
+        displayName: String,
+        password: String
     },
-    { collection: "reple", timestamps: true }
+    { collection: "reples" }
 );
 
 const Reple = mongoose.model("Reple", repleSchema);
