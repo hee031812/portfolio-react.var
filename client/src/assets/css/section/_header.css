@@ -106,12 +106,13 @@
     font-family: 'PPSupplyMono';
     position: absolute;
     right: 0;
-    margin-top: 9vw;
+    margin-top: 10vw;
     padding: 20px 20px;
     background-color: #ffffff3b;
     backdrop-filter: blur(10px);
     z-index: 10000;
     border-radius: 10px;
+    transition: all 1s ease-out;
 }
 
 .mobile-menu li {

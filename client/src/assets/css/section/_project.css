@@ -414,7 +414,7 @@
 }
 
 .showWrap .show {
-    padding: 5px 50px;
+    padding: 5px 3vw;
     border: 1px solid #fff;
     margin: 10px;
     border-radius: 25px;
@@ -429,7 +429,7 @@
 }
 
 .showWrap .close {
-    padding: 5px 50px;
+    padding: 5px 3vw;
     border: 1px solid #fff;
     margin: 10px;
     border-radius: 25px;
@@ -442,5 +442,139 @@
     transition: all 0.3s;
     background-color: #ffffffb2;
     color: #00000031;
+
+}
+
+@media (max-width: 1400px) {
+    .layer__wrap .layer .layer__inner {
+        height: 70vh;
+        position: absolute;
+        left: 50%;
+        top: 45%;
+    }
+
+    .layer__inner .layer__right .layerDesc01 {
+        font-size: 1.2vw !important;
+    }
+
+    .showWrap {
+        padding-top: 1vw;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .layer__wrap .layer .layer__inner {
+        height: 62vh;
+        position: absolute;
+        left: 50%;
+        top: 45%;
+    }
+
+    .layer__inner .layer__right .layerDesc01 {
+        font-size: 1.3vw !important;
+        line-height: 1.8;
+    }
+
+    .showWrap {
+        padding-top: 1vw;
+    }
+
+    .layer__inner .layer__right .layerStack>div {
+        padding: 1px 9px;
+        font-size: 1.5vw;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .layer__wrap .layer .layer__inner {
+        height: 62vh;
+        position: absolute;
+        left: 50%;
+        top: 45%;
+    }
+
+    .layer__inner .layer__right .layerDesc01 {
+        font-size: 1.8vw !important;
+    }
+
+    .showWrap {
+        padding-top: 1vw;
+    }
+
+    .layer__inner .layer__right .layerStack>div {
+        padding: 1px 9px;
+        font-size: 1.5vw;
+    }
+
+    .layer__wrap .layer .layer__inner {
+        width: 90vw;
+        height: 45vh;
+        position: absolute;
+        left: 50%;
+        top: 36%;
+    }
+
+    .showWrap {
+        display: none;
+    }
+
+    .layer__inner .layer__right {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+    .layer__inner .layer__left {
+        display: none;
+    }
+
+    .layer__inner .layer__right {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .layer__inner .layer__right .layerDesc01 {
+        font-size: 2.8vw !important;
+    }
+
+    .layer__inner .layer__right h6 {
+        font-size: 8vw;
+    }
+
+    .layer__inner .layer__right .layerStack>div {
+        padding: 2px 15px;
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 350px) {
+    .layer__inner .layer__left {
+        display: none;
+    }
+
+    .layer__inner .layer__right {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .layer__inner .layer__right .layerTitle01 {
+        font-size: 3.5vw;
+    }
+
+    .layer__inner .layer__right h6 {
+        font-size: 9vw;
+    }
+
+    .layer__inner .layer__right .layerStack>div {
+        padding: 0px 15px;
+        font-size: 2.5vw;
+    }
+
+    .layer__inner .layer__right .layerDesc01 {
+        font-size: 3vw !important;
+        line-height: 1.8;
+    }
 
 }
