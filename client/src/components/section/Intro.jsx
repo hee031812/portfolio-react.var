@@ -3,8 +3,8 @@ import { gsap } from 'gsap';
 import SplitType from 'split-type';
 import Lenis from '@studio-freight/lenis';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
 import myimg from '../../assets/img/김희진2.jpg'
+import Loading from './Loading';
 
 const Intro = () => {
     const descRef = useRef(null);
@@ -108,8 +108,10 @@ const Intro = () => {
         });
     }, []);
 
+
     return (
         <>
+            <Loading />
             <div id="section1">
 
                 <div className="desc split">

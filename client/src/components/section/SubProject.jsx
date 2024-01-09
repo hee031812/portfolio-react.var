@@ -4,7 +4,6 @@ import Modal from '../modal/Modal.jsx';
 import Project from '../project/project.jsx';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
 import image1 from '../../../src/assets/img/standard.png';
 import image2 from '../../../src/assets/img/hpoint.png';
 import image3 from '../../../src/assets/img/mouse.png';
@@ -19,7 +18,7 @@ const SubProject = () => {
       desc: "리액트를 사용하여 작업한 웹스탠다드 사이트 입니다. 웹 표준에 맞춰 사이트를 제작했습니다.",
       subTitle: "project1",
       src: image1,
-      icon: <svg width="33" height="33" viewBox="0 0 16 16" fill="#f14620a9" xmlns="http://www.w3.org/2000/svg">
+      icon: <svg width="33" height="33" viewBox="0 0 16 16" fill="#f14620a9" xmlns="http://www.w3.org/2000/svg" >
         <path fill-rule="evenodd" clip-rule="evenodd"
           d="M5.869 11.219C7.09935 12.26 8.90165 12.26 10.132 11.219C10.5191 10.892 10.8176 10.4727 11 10C10.007 10.1555 9.00482 10.245 8 10.268C6.99518 10.245 5.99299 10.1555 5 10C5.18273 10.4728 5.48158 10.8921 5.869 11.219Z"
           stroke="#f14620a9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -131,9 +130,10 @@ const SubProject = () => {
         <div>LIST</div>
         <div>MORE</div>
       </div>
-      <div className='project__wrap'>
+      <div className='project__wrap' >
         {texts.map((text, index) => {
           return <Project key={index} index={index} text={text} setModal={setModal} />
+
         })}
       </div>
       <Modal modal={modal} texts={texts} />

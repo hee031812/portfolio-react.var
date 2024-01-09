@@ -103,7 +103,6 @@ const Comment = (props) => {
                                                     placeholder='누구니?'
                                                     value={displayName}
                                                     onChange={(e) => { setDisplayName(e.currentTarget.value) }}
-
                                                 />
                                                 <label htmlFor="password" className="required blind">비밀번호</label>
                                                 <input

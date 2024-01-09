@@ -71,7 +71,7 @@
 }
 
 .border {
- padding: 5px 20px 15px;
+    padding: 5px 20px 15px;
     border: 1px solid var(--subcolor);
     border-radius: 2px;
     position: absolute;
@@ -98,6 +98,28 @@
 .weatherIcon {
     width: 50px;
     height: 50px;
+}
+
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    font-family: 'PPSupplyMono';
+    position: absolute;
+    right: 0;
+    margin-top: 9vw;
+    padding: 20px 20px;
+    background-color: #ffffff3b;
+    backdrop-filter: blur(10px);
+    z-index: 10000;
+    border-radius: 10px;
+}
+
+.mobile-menu li {
+    padding: 10px 0;
+}
+
+.toggle-menu {
+    cursor: pointer;
 }
 
 @media(max-width:1200px) {
@@ -141,5 +163,47 @@
 
     .border {
         display: none;
+    }
+
+    #header .left ul {
+        display: none;
+    }
+
+    .toggle-menu {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    #header .left ul {
+        display: none;
+    }
+}
+
+@media(max-width:500px) {
+    .toggle-menu {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+
+    #header .left ul {
+        display: none;
+    }
+
+    .mobile-menu {
+        padding: 5px 20px;
+        margin-top: 17vw;
+        font-size: 2.5vw;
+    }
+
+
+}
+
+@media(max-width:450px) {
+    #header .left h1 {
+        margin-right: 20px;
+        /* margin-left: 20px; */
+        font-size: 15px;
     }
 }

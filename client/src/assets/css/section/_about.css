@@ -1,11 +1,12 @@
-
 #section2 {
     padding: 10% 0;
     height: 150vh;
     position: relative;
-    margin-bottom: 10vw;
+    padding-bottom: 10vw;
+    background: #F2EEE4;
 }
-   #section2 h5 {
+
+#section2 h5 {
     position: absolute;
     left: 0;
     top: 0;
@@ -13,7 +14,7 @@
     font-size: 30px;
     font-weight: bold;
     font-family: 'iceJaram-Rg';
-    }
+}
 
 .Container {
     position: absolute;
@@ -185,8 +186,9 @@
     font-size: 20px;
     font-weight: bold;
 }
-@media(max-width:350px){
-        #section2 p {
-    font-size: 16px;
-}
+
+@media(max-width:350px) {
+    #section2 p {
+        font-size: 16px;
+    }
 }

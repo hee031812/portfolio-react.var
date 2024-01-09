@@ -3,13 +3,11 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Header = () => {
-    const [weatherIcon, setWeatherIcon] = useState(''); // 날씨 아이콘 URL
+    const [weatherIcon, setWeatherIcon] = useState('');
     const [currentTime, setCurrentTime] = useState('');
     const [currentTemp, setCurrentTemp] = useState('');
     const [highTemp, setHighTemp] = useState('');
-
-
-
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
         const updateHeaderAside = () => {
@@ -60,24 +58,52 @@ const Header = () => {
             }
         });
 
-        // Cleanup function
+
         return () => {
             document.removeEventListener("scroll", scrollHandler);
             clearInterval(intervalId);
         };
     }, []);
 
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 800);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 800);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+
     return (
         <>
             <header id="header">
                 <div className="left">
-                    <h1><a href="/#section1">Developer</a> </h1>
-                    <ul>
-                        <li><a href="/#section1">about</a></li>
-                        <li><a href="/#section3">project</a></li>
-                        <li><a href="/#section05">skill</a></li>
-                        <li><a href="/#section07">contact</a></li>
-                    </ul>
+                    <h1><a href="/#section1">Developer</a></h1>
+                    {isMobile ? (
+                        <div className="toggle-menu" onClick={toggleMenu}>
+                            <svg width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 4.75C0.585786 4.75 0.25 5.08579 0.25 5.5C0.25 5.91421 0.585786 6.25 1 6.25V4.75ZM13 6.25C13.4142 6.25 13.75 5.91421 13.75 5.5C13.75 5.08579 13.4142 4.75 13 4.75V6.25ZM1 8.75C0.585786 8.75 0.25 9.08579 0.25 9.5C0.25 9.91421 0.585786 10.25 1 10.25V8.75ZM13 10.25C13.4142 10.25 13.75 9.91421 13.75 9.5C13.75 9.08579 13.4142 8.75 13 8.75V10.25ZM1 0.75C0.585786 0.75 0.25 1.08579 0.25 1.5C0.25 1.91421 0.585786 2.25 1 2.25V0.75ZM13 2.25C13.4142 2.25 13.75 1.91421 13.75 1.5C13.75 1.08579 13.4142 0.75 13 0.75V2.25ZM1 6.25H13V4.75H1V6.25ZM1 10.25H13V8.75H1V10.25ZM1 2.25H13V0.75H1V2.25Z" fill="#F14620" />
+                            </svg>
+                        </div>
+                    ) : (
+                        <ul>
+                            <li><a href="/#section1">about</a></li>
+                            <li><a href="/#section3">project</a></li>
+                            <li><a href="/#section05">skill</a></li>
+                            <li><a href="/#section07">contact</a></li>
+                        </ul>
+                    )}
                 </div>
                 <div className="right">
                     <div className="time">{currentTime}</div>
@@ -90,8 +116,15 @@ const Header = () => {
                 <h3 className="ctemp">🌡 현재온도:{currentTemp} </h3>
                 {/* <h3 className="lowtemp">최저온도: </h3> */}
                 <h3 className="hightemp">🌡 최고온도: {highTemp} </h3>
-
             </div>
+            {isMobile && isMenuOpen && (
+                <ul className="mobile-menu">
+                    <li><a href="/#section1">about</a></li>
+                    <li><a href="/#section3">project</a></li>
+                    <li><a href="/#section05">skill</a></li>
+                    <li><a href="/#section07">contact</a></li>
+                </ul>
+            )}
         </>
     );
 }

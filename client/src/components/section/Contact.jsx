@@ -5,7 +5,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 const Contact = () => {
 
-useEffect(() => {
+  useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     const trigger = ScrollTrigger.create({
@@ -13,8 +13,14 @@ useEffect(() => {
       start: "top 30%",
       end: "bottom 10%",
       markers: false,
-      onEnter: () => gsap.to("body", { backgroundColor: "#F2EEE4", duration: 0.8 }),
-      onLeaveBack: () => gsap.to("body", { backgroundColor: "#A1A1A1", duration: 0.8 })
+      onEnter: () => {
+        gsap.to("body", { backgroundColor: "#FF3B00", duration: 0.8 });
+        gsap.to("#header .right", { color: "#FF3B00", duration: 0.8 });
+      },
+      onLeaveBack: () => {
+        gsap.to("body", { backgroundColor: "#A1A1A1", duration: 0.8 });
+        gsap.to("#header .right", { color: "#A1A1A1", duration: 0.8 }); // 헤더 내 li 색상 복원
+      }
     });
 
     return () => {
@@ -25,13 +31,26 @@ useEffect(() => {
 
   return (
     <div id="section7">
-      <span>SAY bye!</span>
+      <div class="content">
+        <div class="content__container">
+          <p class="content__container__text">
+            SAY
+          </p>
+
+          <ul class="content__container__list">
+            <li class="content__container__list__item">BYE !</li>
+            <li class="content__container__list__item">CONTEACT !</li>
+            <li class="content__container__list__item">ME !</li>
+            <li class="content__container__list__item">everybody !</li>
+          </ul>
+        </div>
+      </div>
       <div class="bottom">
         <ul>
-          <li><a href="/">about</a></li>
-          <li><a href="/">project</a></li>
-          <li><a href="/">site</a></li>
-          <li><a href="/">contact</a></li>
+          <li><a href="/#section1">about</a></li>
+          <li><a href="/#section3">project</a></li>
+          <li><a href="https://github.com/hee031812/hee031812.git" >git</a> </li>
+          <li> <a href="/">mail</a> </li>
         </ul>
       </div>
     </div>

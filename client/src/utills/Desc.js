@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 
 const Desc = () => {
+
     useEffect(() => {
         gsap.to(".highlight-text", { opacity: 1, duration: 2.5, delay: 15 });
         gsap.to(".text", { opacity: 1, duration: 2.5, delay: 10 });

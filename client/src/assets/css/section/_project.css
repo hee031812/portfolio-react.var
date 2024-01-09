@@ -1,5 +1,6 @@
 #section3 {
     height: 100vh;
+    background: #F2EEE4;
 }
 
 #section3 h4 {
@@ -303,12 +304,11 @@
 .layer__wrap .layer .layer__inner {
     position: absolute;
     left: 50%;
-    top: 53%;
+    top: 51%;
     z-index: 10001;
     transform: translate(-50%, -50%);
     width: 80%;
     height: 85vh;
-    border: 1px solid #ffffffc5;
     border-radius: 10px;
     overflow: hidden;
 
@@ -338,11 +338,12 @@
 .layer__inner .layer__right {
     width: 50%;
     height: 100%;
-    background-color: #dddddd8f;
+    background-color: #dddddd30;
     backdrop-filter: blur(20px);
     padding: 30px;
     display: flex;
     flex-direction: column;
+    color: #fff;
 }
 
 .layer__inner .layer__right h6 {
@@ -380,11 +381,12 @@
     font-family: 'IropkeBatang';
     font-size: 0.9vw;
     padding: 5px;
-
+    line-height: 1.6;
 }
 
 .layer__inner .layer__right .layerDesc {
     padding-top: 2vw;
+    line-height: 1.6;
 }
 
 .layer__inner .layer__right .layerStack {
@@ -396,7 +398,7 @@
 
 .layer__inner .layer__right .layerStack>div {
     padding: 5px 20px;
-    border: 1px solid #F14620;
+    border: 1px solid #fff;
     margin: 5px;
     font-family: 'IropkeBatang';
     border-radius: 10px;
@@ -413,7 +415,7 @@
 
 .showWrap .show {
     padding: 5px 50px;
-    border: 1px solid #F14620;
+    border: 1px solid #fff;
     margin: 10px;
     border-radius: 25px;
     cursor: pointer;
@@ -422,19 +424,23 @@
 .showWrap .show:hover {
     transform: scale(1.1);
     transition: all 0.3s;
-    background-color: #f1462027;
+    background-color: #ffffffb2;
+    color: #00000031;
 }
 
 .showWrap .close {
     padding: 5px 50px;
-    border: 1px solid #F14620;
+    border: 1px solid #fff;
     margin: 10px;
     border-radius: 25px;
     cursor: pointer;
+
 }
 
 .showWrap .close:hover {
     transform: scale(1.1);
     transition: all 0.3s;
-    background-color: #f1462027;
+    background-color: #ffffffb2;
+    color: #00000031;
+
 }

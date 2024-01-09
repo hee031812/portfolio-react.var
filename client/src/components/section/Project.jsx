@@ -18,6 +18,7 @@ import quiz2 from '../../assets/img/유퀴즈.png';
 import Layer from '../../utills/Layer';
 import projectsData from '../../utills/LayerData';
 
+
 const Project = () => {
     const [activeLayer, setActiveLayer] = useState('');
 
@@ -47,6 +48,7 @@ const Project = () => {
             },
         });
     }, []);
+
 
     return (
         <>
@@ -90,7 +92,7 @@ const Project = () => {
                         <div className="skill">
                             <span>React</span>
                             <span>Scss</span>
-                           <span onClick={() => toggleLayer('patpar')}>detail</span>
+                            <span onClick={() => toggleLayer('patpar')}>detail</span>
                         </div>
                     </div>
                     <div className="port p3">

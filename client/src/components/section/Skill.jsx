@@ -47,12 +47,14 @@ const Skill = () => {
                 }
             },
         });
-        
+
 
         return () => {
             trigger.kill();
         };
     }, []);
+
+
 
     return (
         <div id="section05">

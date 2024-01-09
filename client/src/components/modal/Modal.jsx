@@ -1,18 +1,18 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import gsap from 'gsap';
-
-// 이미지를 import 합니다.
 import image1 from '../../../src/assets/img/standard.png';
 import image2 from '../../../src/assets/img/hpoint.png';
 import image3 from '../../../src/assets/img/mouse.png';
 import image4 from '../../../src/assets/img/gsap.png';
+
 
 const scaleAnimation = {
     initial: { scale: 0, x: "-50%", y: "-50%" },
     enter: { scale: 1, x: "-50%", y: "-50%", transition: { duration: 0.4 }, ease: [0.76, 1, 0.88, 0.24] },
     closed: { scale: 0, x: "-50%", y: "-50%", transition: { duration: 0.4 }, ease: [0.32, 1, 0.88, 0.67] }
 };
+
 
 const Modal = ({ modal }) => {
     const { active, index } = modal;
@@ -23,6 +23,7 @@ const Modal = ({ modal }) => {
     const texts = [
         {
             src: image1,
+
         },
         {
             src: image2,
@@ -46,16 +47,16 @@ const Modal = ({ modal }) => {
         let moveTextY = gsap.quickTo(cursorText.current, "top", { duration: 0.8, ease: "power3" });
 
         const moveMouse = (e) => {
-   const { clientX, clientY } = e;
-        const xOffset = -10; 
-        const yOffset = 1200; 
+            const { clientX, clientY } = e;
+            const xOffset = -10;
+            const yOffset = 1200;
 
-        moveContainerX(clientX + xOffset);
-        moveContainerY(clientY + yOffset);
-        moveCursorX(clientX);
-        moveCursorY(clientY);
-        moveTextX(clientX);
-        moveTextY(clientY);
+            moveContainerX(clientX + xOffset);
+            moveContainerY(clientY + yOffset);
+            moveCursorX(clientX);
+            moveCursorY(clientY);
+            moveTextX(clientX);
+            moveTextY(clientY);
         };
 
         window.addEventListener("mousemove", moveMouse);

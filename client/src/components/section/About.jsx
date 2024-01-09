@@ -8,10 +8,6 @@ import piture03 from '../../assets/img/사진03.jpg'
 import piture04 from '../../assets/img/사진04.jpg'
 import piture05 from '../../assets/img/사진05.jpg'
 import piture06 from '../../assets/img/사진06.jpg'
-// import piture07 from '../../assets/img/사진07.jpg'
-// import piture08 from '../../assets/img/사진08.jpg'
-// import piture09 from '../../assets/img/사진09.jpg'
-// import piture10 from '../../assets/img/사진10.jpg'
 import piture11 from '../../assets/img/사진11.jpg'
 import piture12 from '../../assets/img/사진12.jpg'
 import piture13 from '../../assets/img/사진13.jpg'
@@ -43,7 +39,6 @@ const About = () => (
             <Picture src={piture12} alt="" note={<span>Winter</span>} />
             <Picture src={piture06} alt="" note={<span>Autumn</span>} />
             <Picture src={piture04} alt="" note={<span>One summer day</span>} />
-
         </div>
 
         <Desc />
