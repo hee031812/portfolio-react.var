@@ -78,7 +78,7 @@
     position: absolute;
     right: 20px;
     bottom: 20px;
-    z-index: 10;
+    z-index: 100000;
 }
 
 .port-wrap .port .skill span {
@@ -321,7 +321,7 @@
 .layer__inner .layer__left {
     width: 50%;
     height: 100%;
-    background-image: url('https://images.unsplash.com/photo-1610010252747-afeb906e2d55?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('../../img/Frame08.png');
     background-position: center center;
     background-size: cover;
     position: relative;

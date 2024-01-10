@@ -111,7 +111,7 @@ const Header = () => {
                     <div id="coordinates"></div>
                 </div>
             </header>
-            <div class="border">
+            <div className="border">
                 <img className='weatherIcon' src={weatherIcon} alt="Weather Icon" />
                 <h3 className="ctemp">🌡 현재온도:{currentTemp} </h3>
                 {/* <h3 className="lowtemp">최저온도: </h3> */}

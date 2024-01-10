@@ -31,21 +31,21 @@ const Contact = () => {
 
   return (
     <div id="section7">
-      <div class="content">
-        <div class="content__container">
-          <p class="content__container__text">
+      <div className="content">
+        <div className="content__container">
+          <p className="content__container__text">
             SAY
           </p>
 
-          <ul class="content__container__list">
-            <li class="content__container__list__item">BYE !</li>
-            <li class="content__container__list__item">CONTEACT !</li>
-            <li class="content__container__list__item">ME !</li>
-            <li class="content__container__list__item">everybody !</li>
+          <ul className="content__container__list">
+            <li className="content__container__list__item">BYE !</li>
+            <li className="content__container__list__item">CONTEACT !</li>
+            <li className="content__container__list__item">ME !</li>
+            <li className="content__container__list__item">everybody !</li>
           </ul>
         </div>
       </div>
-      <div class="bottom">
+      <div className="bottom">
         <ul>
           <li><a href="/#section1">about</a></li>
           <li><a href="/#section3">project</a></li>

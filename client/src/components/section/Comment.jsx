@@ -113,7 +113,7 @@ const Comment = (props) => {
                                                     value={password}
                                                     onChange={(e) => { setPassword(e.currentTarget.value) }} />
                                             </div>
-                                            <div class="text">
+                                            <div className="text">
                                                 <label htmlFor="content" className="required blind">글 내용</label>
                                                 <textarea
                                                     name="content"
