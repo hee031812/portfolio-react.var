@@ -2,7 +2,7 @@
 
 ### 시작하기
 
-client 설치
+client 설치uu
 
 ````npx create-react-app .
 npm install react-router-dom
