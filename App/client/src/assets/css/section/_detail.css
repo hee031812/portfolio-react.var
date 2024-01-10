@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainWrap {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  background-color: #131212;
+}
+.containerWrap {
+  width: 90%;
+  height: 90%;
+  padding: 5% -5%;
+  background-color: #7878789e;
+  z-index: 10000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+      padding: 0px 80px 50px 80px;
+}
+
+
+.mainWrap .main__title {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+
+}
+
+.mainWrap .main__title h2 {
+  text-transform: uppercase;
+  font-size: 2vw;
+  font-weight: lighter;
+  line-height: 1;
+}
+
+.mainWrap .main__title span {
+  display: inline-block;
+  margin-top: 3vh;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  letter-spacing: 1px;
+}
+.imgs {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}
+
+.mainWrap .imgs img {
+  position: absolute;
+
+}
+
+.mainWrap .imgs:nth-child(1) {
+  filter: brightness(0.7);
+
+}
+
+.mainWrap .imgs:nth-child(1) img.i01 {
+  width: 300px;
+  height: 25vh;
+  object-position: center;
+  object-fit: cover;
+  left: 90%;
+  top: 70%;
+
+}
+
+.mainWrap .imgs:nth-child(1) img.i02 {
+  width: 250px;
+  height: 30vh;
+  object-position: center;
+  object-fit: cover;
+  left: 5%;
+  top: 65%;
+
+}
+
+.mainWrap .imgs:nth-child(1) img.i03 {
+  width: 250px;
+  height: 20vh;
+  object-position: center;
+  object-fit: cover;
+  left: 35%;
+  top: 0%;
+
+}
+
+.mainWrap .imgs:nth-child(2) {
+  filter: brightness(0.6);
+}
+
+.mainWrap .imgs:nth-child(2) img.i04 {
+  width: 240px;
+  height: 25vh;
+  object-position: center;
+  object-fit: cover;
+  left: 5%;
+  top: 10%;
+
+}
+
+.mainWrap .imgs:nth-child(2) img.i05 {
+  width: 250px;
+  height: 30vh;
+  object-position: center;
+  object-fit: cover;
+  left: 65%;
+  top: 2.5%;
+
+}
+
+.mainWrap .imgs:nth-child(2) img.i06 {
+  width: 225px;
+  height: 25vh;
+  object-position: center;
+  object-fit: cover;
+  left: 40%;
+  top: 75%;
+
+}
+
+.mainWrap .imgs:nth-child(3) {
+  filter: brightness(0.5);
+}
+
+.mainWrap .imgs:nth-child(3) img.i07 {
+  width: 150px;
+  height: 25vh;
+  object-position: center;
+  object-fit: cover;
+  left: 90%;
+  top: 10%;
+
+}
+
+.mainWrap .imgs:nth-child(3) img.i08 {
+  width: 180px;
+  height: 30vh;
+  object-position: center;
+  object-fit: cover;
+  left: 72%;
+  top: 50%;
+  
+}
+
+
+
+
+.titleWrap {
+    width: 100%;
+    font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #ffffff;
+    border-bottom: 2px solid #fff;
+}
+
+.titleWrap h2 {
+    font-family: 'Headlines';
+    font-size: 6.5vw;
+    font-weight: 900;
+    z-index: 200;
+    letter-spacing: 0.3vw;
+
+}
+
+.hidden-p {
+    font-size: 2vw;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    font-family: "SebangGothic";
+    letter-spacing: 0.3vw;
+
+}
+
+.dir {
+    width: 100%;
+    display: flex;
+    height: 80%;
+}
+
+.dir_left {
+    width: 40%;
+    height: 100%;
+}
+
+.dir_left img {
+    margin-top: 20px;
+    display: flex;
+}
+
+.dir_right {
+    color: #ffffff;
+    font-family: "VitroPride";
+    padding: 20px 50px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dir_right .dir_top {
+    width: 100%;
+    height: 80%;
+}
+
+.dir_right h3 {
+    padding: 20px 0px;
+}
+
+.dir_right p {
+    padding: 5px 0px;
+    font-size: 0.9vw;
+    height: 100%;
+    transition: all 1s;
+}
+
+.dir_right p:hover {
+    transition: all 3s;
+    transform: scaleX(2px);
+}
+
+.dir_bottom {
+    width: 100%;
+    height: 20%;
+}
+
+.dir_right .stack {
+    display: flex;
+    font-size: 0.9vw;
+}
+
+.dir_right .stack .stack01,
+.dir_right .stack .stack02,
+.dir_right .stack .stack03 {
+    border: 1px solid #fff;
+    padding: 5px 30px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.dir_right .stack .stack01:hover,
+.dir_right .stack .stack02:hover,
+.dir_right .stack .stack03:hover {
+    background-color: #ffffff6b;
+}
+
+.dir_right .Site {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    font-size: 0.9vw;
+}
+
+.Site .site_left {
+    width: 75%;
+}
+
+.Site .site_right {
+    padding-left: 50px;
+    width: 35%;
+    transition: all 0.3s;
+    color: #fff;
+}
+
+.Site .site_right:hover {
+    transform: scaleX(1.1);
+}
