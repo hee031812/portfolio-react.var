@@ -30,7 +30,7 @@ const App = () => {
         },
       });
 
-    }, 10);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
