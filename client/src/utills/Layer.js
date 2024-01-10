@@ -3,14 +3,13 @@ import React, { useState } from 'react';
 
 
 const Layer = ({ project }) => {
-   const [isVisible, setIsVisible] = useState(true); // State to control visibility
-
+    const [isVisible, setIsVisible] = useState(true);
     if (!project || !isVisible) {
         return null;
     }
 
     const handleClose = () => {
-        setIsVisible(false); // Function to handle close action
+        setIsVisible(false);
     }
 
 
@@ -38,8 +37,8 @@ const Layer = ({ project }) => {
                                 <div className="layerDesc01">{project.desc1}</div>
                             </div>
                             <div className='showWrap'>
-                                <div className='show'>show</div>
-                            <div className="close" onClick={handleClose}>close</div>
+                                <a href={project.link} target="_blank" rel="noopener noreferrer" className='show'>show</a>
+                                <div className="close" onClick={handleClose}>close</div>
                             </div>
                         </div>
                     </div>

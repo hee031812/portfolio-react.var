@@ -19,7 +19,7 @@ const Contact = () => {
       },
       onLeaveBack: () => {
         gsap.to("body", { backgroundColor: "#A1A1A1", duration: 0.8 });
-        gsap.to("#header .right", { color: "#A1A1A1", duration: 0.8 }); // 헤더 내 li 색상 복원
+        gsap.to("#header .right", { color: "#A1A1A1", duration: 0.8 });
       }
     });
 
@@ -50,7 +50,7 @@ const Contact = () => {
           <li><a href="/#section1">about</a></li>
           <li><a href="/#section3">project</a></li>
           <li><a href="https://github.com/hee031812/hee031812.git" >git</a> </li>
-          <li> <a href="/">mail</a> </li>
+          {/* <li> <a href="/">mail</a> </li> */}
         </ul>
       </div>
     </div>
