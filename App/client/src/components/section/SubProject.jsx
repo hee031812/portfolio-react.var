@@ -126,8 +126,10 @@ const SubProject = () => {
   return (
     <section id='section4' className='contents'>
       <div className='sec04_desc split' ref={descRef}>
-        <div>We are a design agency based in Copenhagen.
-          With a strong belief in strategically founded and highly crafted digital experiences.
+        <div>
+          This is a work that<br />
+          I've worked hard on for 6 months. <br />
+          If you want to see my work, please scroll down.<br />
         </div>
       </div>
       <div className="sec04_text">

@@ -69,10 +69,7 @@ const Project = () => {
 
                         </div>
                         <div className="skill">
-                            <span>React</span>
-                            <span>Scss</span>
                             <span onClick={() => toggleLayer('recycle')}>detail</span>
-
                         </div>
                     </div>
 
@@ -90,8 +87,6 @@ const Project = () => {
                             </p>
                         </div>
                         <div className="skill">
-                            <span>React</span>
-                            <span>Scss</span>
                             <span onClick={() => toggleLayer('patpar')}>detail</span>
                         </div>
                     </div>
@@ -109,8 +104,6 @@ const Project = () => {
                             </p>
                         </div>
                         <div className="skill">
-                            <span>Vue.js</span>
-                            <span>Scss</span>
                             <span onClick={() => toggleLayer('movie')}>detail</span>
                         </div>
                     </div>
@@ -128,8 +121,6 @@ const Project = () => {
                             </p>
                         </div>
                         <div className="skill">
-                            <span>React</span>
-                            <span>Scss</span>
                             <span onClick={() => toggleLayer('youtube')}>detail</span>
                         </div>
                     </div>
@@ -148,8 +139,6 @@ const Project = () => {
                             </p>
                         </div>
                         <div className="skill">
-                            <span>PHP</span>
-                            <span>Css</span>
                             <span onClick={() => toggleLayer('phpblog')}>detail</span>
                         </div>
                     </div>
@@ -167,8 +156,6 @@ const Project = () => {
                             </p>
                         </div>
                         <div className="skill">
-                            <span>Java</span>
-                            <span>Css</span>
                             <span onClick={() => toggleLayer('quiz')}>detail</span>
                         </div>
                     </div>
@@ -186,8 +173,6 @@ const Project = () => {
                             </p>
                         </div>
                         <div className="skill">
-                            <span>Java</span>
-                            <span>Css</span>
                             <span onClick={() => toggleLayer('uquiz')}>detail</span>
                         </div>
                     </div>

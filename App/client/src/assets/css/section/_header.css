@@ -113,6 +113,7 @@
     z-index: 10000;
     border-radius: 10px;
     transition: all 1s ease-out;
+    position: fixed;
 }
 
 .mobile-menu li {
@@ -122,6 +123,7 @@
 .toggle-menu {
     cursor: pointer;
 }
+
 
 @media(max-width:1200px) {
     #header .right {

@@ -60,7 +60,7 @@
 
 .skill__desc .num {
     font-family: 'iceJaram-Rg';
-    font-size: 1vw;
+    font-size: 2vw;
     line-height: 1;
     font-weight: 900;
     color: var(--white500);
@@ -91,11 +91,12 @@
 
 .skill__desc dd {
     font-family: 'IropkeBatang';
-    font-size: 20px;
+    font-size: 19px;
     margin-bottom: 5px;
     position: relative;
     padding-left: 28px;
     color: #fff;
+    line-height: 1.7;
 }
 
 .skill__desc dd::before {
@@ -192,10 +193,38 @@
 
     .skill__desc h3 {
         font-size: 40px;
+        margin-bottom: 15px;
     }
 
     .skill__desc dd {
-        font-size: 16px;
+        font-size: 15px;
+    }
+
+    .skill__desc .num {
+        padding-top: 10vw;
+    }
+
+    #section05 .sec05__desc {
+        display: none;
+    }
+}
+
+@media(max-width: 350px) {
+    .skill__inner {
+        padding: 5% 5%;
+    }
+
+    .skill__desc .num {
+        font-size: 10vw;
+    }
+
+    .skill__desc h3 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .skill__desc dd {
+        font-size: 14px;
     }
 
     .skill__desc .num {

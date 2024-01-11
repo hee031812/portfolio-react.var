@@ -187,8 +187,22 @@
     font-weight: bold;
 }
 
+@media(max-width:450px) {
+    #section2 p {
+        font-size: 16px;
+    }
+
+    .Container {
+        display: none;
+    }
+}
+
 @media(max-width:350px) {
     #section2 p {
         font-size: 16px;
+    }
+
+    .Container {
+        display: none;
     }
 }
