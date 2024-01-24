@@ -10,7 +10,7 @@ const Skill = () => {
 
         const trigger = ScrollTrigger.create({
             trigger: "#section05",
-            start: "top 30%",
+            start: "top 10%",
             end: "bottom 10%",
             markers: false,
             onEnter: () => {
@@ -33,7 +33,6 @@ const Skill = () => {
             },
             onLeave: ({ progress }) => {
                 gsap.to("body", { backgroundColor: "#1A1A1A", duration: 1.4 });
-
             },
             onLeaveBack: ({ progress }) => {
                 if (progress < 0.5) {
